@@ -1,0 +1,491 @@
+"","Type","Subpopulation","Indicator","Statistic","NResp","Estimate","StdError","LCB95Pct","UCB95Pct"
+"1","Combined","All Basins","Oxygen_Dissolved_Field","5Pct",3,0.771851158204404,"",0.54,1.51686847312145
+"2","Combined","All Basins","Oxygen_Dissolved_Field","10Pct",5,1.66764665441022,"",0.54,2.26503064042643
+"3","Combined","All Basins","Oxygen_Dissolved_Field","25Pct",9,2.40446634646219,"",1.85937988091721,3.59239907483872
+"4","Combined","All Basins","Oxygen_Dissolved_Field","50Pct",20,4.05516005637043,"",3.20060406936085,5.37740698772316
+"5","Combined","All Basins","Oxygen_Dissolved_Field","75Pct",30,6.97860296538519,"",5.45914186795351,7.30324940180395
+"6","Combined","All Basins","Oxygen_Dissolved_Field","90Pct",35,7.71641674763996,"",7.21603585574762,8.53607481106011
+"7","Combined","All Basins","Oxygen_Dissolved_Field","95Pct",36,8.38112549400659,"",7.35254854538225,8.56
+"8","Combined","All Basins","Oxygen_Dissolved_Field","Mean",38,4.63499864168094,"0.297536149959527",4.05183850366156,5.21815877970032
+"9","Combined","All Basins","Oxygen_Dissolved_Field","Variance",38,4.10981823732469,"0.900628949514172",2.34461793284277,5.87501854180661
+"10","Combined","All Basins","Oxygen_Dissolved_Field","Std. Deviation",38,1.9084966016243,"0.188431264253718",1.53917811012566,2.27781509312294
+"11","Basin","ZONE 1","Oxygen_Dissolved_Field","5Pct",0,0.7905,"",0.7905,0.7905
+"12","Basin","ZONE 1","Oxygen_Dissolved_Field","10Pct",1,1.845,"",0.54,3.21176657009485
+"13","Basin","ZONE 1","Oxygen_Dissolved_Field","25Pct",2,3.205,"",0.799497791783941,6.97286624607352
+"14","Basin","ZONE 1","Oxygen_Dissolved_Field","50Pct",5,7.1,"",5.51770727589463,7.38409757470179
+"15","Basin","ZONE 1","Oxygen_Dissolved_Field","75Pct",8,7.6925,"",7.14128049414807,8.53185420853541
+"16","Basin","ZONE 1","Oxygen_Dissolved_Field","90Pct",9,8.402,"",7.39690687061825,8.56
+"17","Basin","ZONE 1","Oxygen_Dissolved_Field","95Pct",10,8.4775,"",8.06626799348081,8.56
+"18","Basin","ZONE 1","Oxygen_Dissolved_Field","Mean",11,6.02272727272727,"0.59711256155397",4.85240815736504,7.19304638808951
+"19","Basin","ZONE 1","Oxygen_Dissolved_Field","Variance",11,6.66389256198347,"2.05597399416426",2.63425758027055,10.6935275436964
+"20","Basin","ZONE 1","Oxygen_Dissolved_Field","Std. Deviation",11,2.58145163851339,"0.398220513506939",1.80095377413474,3.36194950289204
+"21","Basin","ZONE 2","Oxygen_Dissolved_Field","5Pct",0,2.4125,"",2.4125,2.4125
+"22","Basin","ZONE 2","Oxygen_Dissolved_Field","10Pct",0,2.445,"",2.445,2.445
+"23","Basin","ZONE 2","Oxygen_Dissolved_Field","25Pct",1,4.1825,"",0.54,5.04328117597859
+"24","Basin","ZONE 2","Oxygen_Dissolved_Field","50Pct",2,4.98,"",2.43008754550754,6.6211209368102
+"25","Basin","ZONE 2","Oxygen_Dissolved_Field","75Pct",3,5.2225,"",4.24158714342632,6.86
+"26","Basin","ZONE 2","Oxygen_Dissolved_Field","90Pct",4,6.55,"",5.01654173981662,6.86
+"27","Basin","ZONE 2","Oxygen_Dissolved_Field","95Pct",4,6.705,"",5.20033037281785,6.86
+"28","Basin","ZONE 2","Oxygen_Dissolved_Field","Mean",5,4.786,"0.625016809120823",3.56098956439104,6.01101043560896
+"29","Basin","ZONE 2","Oxygen_Dissolved_Field","Variance",5,2.000904,"0.994393383298311",0.0519287822703776,3.94987921772962
+"30","Basin","ZONE 2","Oxygen_Dissolved_Field","Std. Deviation",5,1.41453313853017,"0.351491724093357",0.725622018443296,2.10344425861704
+"31","Basin","ZONE 3","Oxygen_Dissolved_Field","5Pct",1,0.54,"",0.54,3.49075281212111
+"32","Basin","ZONE 3","Oxygen_Dissolved_Field","10Pct",1,0.54,"",0.54,3.54325281212111
+"33","Basin","ZONE 3","Oxygen_Dissolved_Field","25Pct",1,1.44,"",0.54,3.91860224969689
+"34","Basin","ZONE 3","Oxygen_Dissolved_Field","50Pct",3,3.93,"",1.18557871122329,6.02401330548544
+"35","Basin","ZONE 3","Oxygen_Dissolved_Field","75Pct",5,5.865,"",3.91888217996178,7.22
+"36","Basin","ZONE 3","Oxygen_Dissolved_Field","90Pct",6,7.213,"",4.05344593759237,7.22
+"37","Basin","ZONE 3","Oxygen_Dissolved_Field","95Pct",6,7.2165,"",4.08844593759237,7.22
+"38","Basin","ZONE 3","Oxygen_Dissolved_Field","Mean",7,3.90857142857143,"0.65960335444085",2.61577260978556,5.2013702473573
+"39","Basin","ZONE 3","Oxygen_Dissolved_Field","Variance",7,4.71521224489796,"1.7010795467436",1.38115759844279,8.04926689135313
+"40","Basin","ZONE 3","Oxygen_Dissolved_Field","Std. Deviation",7,2.17145394722015,"0.391691370871873",1.40375296725616,2.93915492718414
+"41","Basin","ZONE 4","Oxygen_Dissolved_Field","5Pct",0,2.19,"",2.19,2.19
+"42","Basin","ZONE 4","Oxygen_Dissolved_Field","10Pct",0,2.22,"",2.22,2.22
+"43","Basin","ZONE 4","Oxygen_Dissolved_Field","25Pct",1,2.305,"",0.54,2.99141860989184
+"44","Basin","ZONE 4","Oxygen_Dissolved_Field","50Pct",2,2.96,"",2.2295579175041,4.54482093310349
+"45","Basin","ZONE 4","Oxygen_Dissolved_Field","75Pct",3,3.7375,"",2.35921956658258,4.91
+"46","Basin","ZONE 4","Oxygen_Dissolved_Field","90Pct",4,4.595,"",2.98377588219138,4.91
+"47","Basin","ZONE 4","Oxygen_Dissolved_Field","95Pct",4,4.7525,"",3.64613580856099,4.91
+"48","Basin","ZONE 4","Oxygen_Dissolved_Field","Mean",5,3.268,"0.401166845023732",2.48172743196193,4.05427256803808
+"49","Basin","ZONE 4","Oxygen_Dissolved_Field","Variance",5,0.956936,"0.41225656435137",0.148927981481097,1.7649440185189
+"50","Basin","ZONE 4","Oxygen_Dissolved_Field","Std. Deviation",5,0.978231056550547,"0.210715332329089",0.565236594195144,1.39122551890595
+"51","Basin","ZONE 5","Oxygen_Dissolved_Field","5Pct",0,0.5775,"",0.5775,0.5775
+"52","Basin","ZONE 5","Oxygen_Dissolved_Field","10Pct",0,0.615,"",0.615,0.615
+"53","Basin","ZONE 5","Oxygen_Dissolved_Field","25Pct",1,1.6825,"",0.54,3.8550612971335
+"54","Basin","ZONE 5","Oxygen_Dissolved_Field","50Pct",2,3.82,"",0.608177473184215,5.13182252681579
+"55","Basin","ZONE 5","Oxygen_Dissolved_Field","75Pct",3,4.135,"",1.7479990979714,5.2
+"56","Basin","ZONE 5","Oxygen_Dissolved_Field","90Pct",4,5.125,"",3.8497991600153,5.2
+"57","Basin","ZONE 5","Oxygen_Dissolved_Field","95Pct",4,5.1625,"",4.09287949600918,5.2
+"58","Basin","ZONE 5","Oxygen_Dissolved_Field","Mean",5,3.144,"0.712224293582762",1.7480660356633,4.5399339643367
+"59","Basin","ZONE 5","Oxygen_Dissolved_Field","Variance",5,2.713584,"0.788240521253534",1.168660967188,4.25850703281201
+"60","Basin","ZONE 5","Oxygen_Dissolved_Field","Std. Deviation",5,1.64729596612145,"0.239252853605124",1.17836898985697,2.11622294238593
+"61","Basin","ZONE 6","Oxygen_Dissolved_Field","5Pct",0,0.7,"",0.7,0.7
+"62","Basin","ZONE 6","Oxygen_Dissolved_Field","10Pct",0,0.71,"",0.71,0.71
+"63","Basin","ZONE 6","Oxygen_Dissolved_Field","25Pct",1,2.5375,"",0.54,2.90863708022595
+"64","Basin","ZONE 6","Oxygen_Dissolved_Field","50Pct",2,2.77,"",0.704491541382559,3.39218209566773
+"65","Basin","ZONE 6","Oxygen_Dissolved_Field","75Pct",3,3.12,"",2.58450981187642,3.49
+"66","Basin","ZONE 6","Oxygen_Dissolved_Field","90Pct",4,3.355,"",2.84988391043825,3.49
+"67","Basin","ZONE 6","Oxygen_Dissolved_Field","95Pct",4,3.4225,"",3.00260475223373,3.49
+"68","Basin","ZONE 6","Oxygen_Dissolved_Field","Mean",5,2.584,"0.42493419869053",1.75114427476717,3.41685572523283
+"69","Basin","ZONE 6","Oxygen_Dissolved_Field","Variance",5,0.940824,"0.563327282275897",0,2.04492518476959
+"70","Basin","ZONE 6","Oxygen_Dissolved_Field","Std. Deviation",5,0.969960823951153,"0.290386615812571",0.400813515366045,1.53910813253626
+"71","Combined","All Basins","pH_Field","5Pct",1,3.791358325236,"",3.73,3.93914773747182
+"72","Combined","All Basins","pH_Field","10Pct",2,3.92887450599341,"",3.73,4.21784289404669
+"73","Combined","All Basins","pH_Field","25Pct",8,4.79780707769633,"",3.99441223881244,5.63636947338033
+"74","Combined","All Basins","pH_Field","50Pct",15,5.99190110361098,"",5.70572270654692,6.19756271776808
+"75","Combined","All Basins","pH_Field","75Pct",27,6.90760467265006,"",6.27665140004278,7.49206196018869
+"76","Combined","All Basins","pH_Field","90Pct",36,7.57156928426844,"",7.09028653555262,8.44
+"77","Combined","All Basins","pH_Field","95Pct",37,8.00124652307054,"",7.48403706347167,8.44
+"78","Combined","All Basins","pH_Field","Mean",38,5.94639468018699,"0.166327888691986",5.62039800872611,6.27239135164787
+"79","Combined","All Basins","pH_Field","Variance",38,0.840925395088312,"0.124172269654782",0.597552218686344,1.08429857149028
+"80","Combined","All Basins","pH_Field","Std. Deviation",38,0.895159549920757,"0.0642769768197765",0.769178990318879,1.02114010952263
+"81","Basin","ZONE 1","pH_Field","5Pct",1,3.73,"",3.73,3.90671048447511
+"82","Basin","ZONE 1","pH_Field","10Pct",1,3.747,"",3.73,3.92871048447511
+"83","Basin","ZONE 1","pH_Field","25Pct",2,3.93,"",3.73,4.2264298355509
+"84","Basin","ZONE 1","pH_Field","50Pct",5,4.305,"",3.91582871926207,5.6464710220293
+"85","Basin","ZONE 1","pH_Field","75Pct",8,5.6075,"",4.29038765227128,6.73
+"86","Basin","ZONE 1","pH_Field","90Pct",9,6.393,"",5.46756744158147,6.73
+"87","Basin","ZONE 1","pH_Field","95Pct",10,6.598,"",5.67070148311003,6.73
+"88","Basin","ZONE 1","pH_Field","Mean",11,4.89818181818182,"0.292779717524862",4.32434411642928,5.47201951993436
+"89","Basin","ZONE 1","pH_Field","Variance",11,1.05679669421488,"0.237211050145266",0.59187157919523,1.52172180923452
+"90","Basin","ZONE 1","pH_Field","Std. Deviation",11,1.02800617421048,"0.115374331446718",0.80187663983453,1.25413570858644
+"91","Basin","ZONE 2","pH_Field","5Pct",0,4.5,"",4.5,4.5
+"92","Basin","ZONE 2","pH_Field","10Pct",0,4.59,"",4.59,4.59
+"93","Basin","ZONE 2","pH_Field","25Pct",1,6.0025,"",3.73,6.93922913009169
+"94","Basin","ZONE 2","pH_Field","50Pct",2,6.905,"",4.58317367496154,7.24113772083974
+"95","Basin","ZONE 2","pH_Field","75Pct",3,7.105,"",6.00914021053536,7.27
+"96","Basin","ZONE 2","pH_Field","90Pct",4,7.24,"",6.93295709200655,7.27
+"97","Basin","ZONE 2","pH_Field","95Pct",4,7.255,"",7.0929877405733,7.27
+"98","Basin","ZONE 2","pH_Field","Mean",5,6.42,"0.401138312455969",5.63378335476713,7.20621664523287
+"99","Basin","ZONE 2","pH_Field","Variance",5,0.87192,"0.419335664850682",0.050037199459505,1.6938028005405
+"100","Basin","ZONE 2","pH_Field","Std. Deviation",5,0.933766566118107,"0.224539879701391",0.493676488810423,1.37385664342579
+"101","Basin","ZONE 3","pH_Field","5Pct",0,4.8365,"",4.8365,4.8365
+"102","Basin","ZONE 3","pH_Field","10Pct",0,4.903,"",4.903,4.903
+"103","Basin","ZONE 3","pH_Field","25Pct",1,5.7425,"",4.79113971086359,5.90887383638758
+"104","Basin","ZONE 3","pH_Field","50Pct",3,5.92,"",4.95134743182904,6.94045539832479
+"105","Basin","ZONE 3","pH_Field","75Pct",5,6.24,"",5.90720513668165,6.95
+"106","Basin","ZONE 3","pH_Field","90Pct",6,6.943,"",6.11091151697011,6.95
+"107","Basin","ZONE 3","pH_Field","95Pct",6,6.9465,"",6.21564606788043,6.95
+"108","Basin","ZONE 3","pH_Field","Mean",7,5.99428571428571,"0.208399664939843",5.58582987661341,6.40274155195802
+"109","Basin","ZONE 3","pH_Field","Variance",7,0.311795918367347,"0.117068048822274",0.0823467589353132,0.541245077799381
+"110","Basin","ZONE 3","pH_Field","Std. Deviation",7,0.558386889501667,"0.104827003483867",0.352929738066033,0.763844040937302
+"111","Basin","ZONE 4","pH_Field","5Pct",0,5.9775,"",5.9775,5.9775
+"112","Basin","ZONE 4","pH_Field","10Pct",0,5.985,"",5.985,5.985
+"113","Basin","ZONE 4","pH_Field","25Pct",1,6.1425,"",3.73,7.52082916271824
+"114","Basin","ZONE 4","pH_Field","50Pct",2,7.495,"",5.98738947937602,8.1733613162343
+"115","Basin","ZONE 4","pH_Field","75Pct",3,7.8675,"",6.18604109927689,8.44
+"116","Basin","ZONE 4","pH_Field","90Pct",4,8.21,"",7.51580389691746,8.44
+"117","Basin","ZONE 4","pH_Field","95Pct",4,8.325,"",7.5512393373265,8.44
+"118","Basin","ZONE 4","pH_Field","Mean",5,7.232,"0.389558304398293",6.46847975350085,7.99552024649915
+"119","Basin","ZONE 4","pH_Field","Variance",5,0.933976,"0.235071339760106",0.473244640272614,1.39470735972739
+"120","Basin","ZONE 4","pH_Field","Std. Deviation",5,0.966424337441892,"0.121619112150226",0.728055257795712,1.20479341708807
+"121","Basin","ZONE 5","pH_Field","5Pct",0,4.2525,"",4.2525,4.2525
+"122","Basin","ZONE 5","pH_Field","10Pct",0,4.305,"",4.305,4.305
+"123","Basin","ZONE 5","pH_Field","25Pct",1,6.03,"",3.73,6.48596726174473
+"124","Basin","ZONE 5","pH_Field","50Pct",2,6.445,"",4.28926998626405,6.86149809654628
+"125","Basin","ZONE 5","pH_Field","75Pct",3,6.7975,"",6.06082310492772,6.87
+"126","Basin","ZONE 5","pH_Field","90Pct",4,6.86,"",6.47181924401377,6.87
+"127","Basin","ZONE 5","pH_Field","95Pct",4,6.865,"",6.73431924401377,6.87
+"128","Basin","ZONE 5","pH_Field","Mean",5,6.136,"0.395590158327177",5.36065753704024,6.91134246295977
+"129","Basin","ZONE 5","pH_Field","Variance",5,0.822624,"0.477974631219096",0,1.75943706271324
+"130","Basin","ZONE 5","pH_Field","Std. Deviation",5,0.906986218197388,"0.263496082756946",0.390543385926389,1.42342905046839
+"131","Basin","ZONE 6","pH_Field","5Pct",0,6.8275,"",6.8275,6.8275
+"132","Basin","ZONE 6","pH_Field","10Pct",0,6.835,"",6.835,6.835
+"133","Basin","ZONE 6","pH_Field","25Pct",1,6.98,"",3.73,7.08924247201506
+"134","Basin","ZONE 6","pH_Field","50Pct",2,7.08,"",6.83086865603692,7.39116517843284
+"135","Basin","ZONE 6","pH_Field","75Pct",3,7.185,"",7.02400684570442,7.46
+"136","Basin","ZONE 6","pH_Field","90Pct",4,7.365,"",7.08792555802907,7.46
+"137","Basin","ZONE 6","pH_Field","95Pct",4,7.4125,"",7.12462779014538,7.46
+"138","Basin","ZONE 6","pH_Field","Mean",5,7.136,"0.0859585506571747",6.96752433654868,7.30447566345132
+"139","Basin","ZONE 6","pH_Field","Variance",5,0.039744,"0.018647656772919",0.00319526432901431,0.0762927356709858
+"140","Basin","ZONE 6","pH_Field","Std. Deviation",5,0.199358972710034,"0.0467690430970517",0.107693332648411,0.291024612771657
+"141","Combined","All Basins","Escherichia_Coli_Quanti_Tray","5Pct",1,1,"",1,18.4192537759001
+"142","Combined","All Basins","Escherichia_Coli_Quanti_Tray","10Pct",2,14.6326449181893,"",1,72.6032692115338
+"143","Combined","All Basins","Escherichia_Coli_Quanti_Tray","25Pct",8,77.3946890758305,"",17.4968745083206,136.740450782792
+"144","Combined","All Basins","Escherichia_Coli_Quanti_Tray","50Pct",18,161.027514488342,"",108.927510573774,275.655885599011
+"145","Combined","All Basins","Escherichia_Coli_Quanti_Tray","75Pct",26,364.481924631455,"",224.632660258616,758.859067745061
+"146","Combined","All Basins","Escherichia_Coli_Quanti_Tray","90Pct",31,760.359479079928,"",524.567037246335,2419.6
+"147","Combined","All Basins","Escherichia_Coli_Quanti_Tray","95Pct",34,1808.82047381685,"",754.315739036132,2419.6
+"148","Combined","All Basins","Escherichia_Coli_Quanti_Tray","Mean",38,382.493713989035,"73.3824501885512",238.666754522171,526.3206734559
+"149","Combined","All Basins","Escherichia_Coli_Quanti_Tray","Variance",38,270905.541328038,"96671.6035747939",81432.6799937083,460378.402662367
+"150","Combined","All Basins","Escherichia_Coli_Quanti_Tray","Std. Deviation",38,432.486962083287,"62.6999557723369",309.597306937252,555.376617229322
+"151","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","5Pct",0,17.89,"",17.89,17.89
+"152","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","10Pct",1,70.75,"",1,76.8097339132579
+"153","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","25Pct",2,76.9,"",17.6877086976583,147.417787671909
+"154","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","50Pct",5,151.05,"",76.7363440191841,350.638558013033
+"155","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","75Pct",8,345.875,"",150.239961644592,648.8
+"156","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","90Pct",9,562.16,"",316.678150517715,648.8
+"157","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","95Pct",10,629.165,"",385.778863767469,648.8
+"158","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","Mean",11,253.927272727273,"60.0594086687935",136.212994803665,371.641550650881
+"159","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","Variance",11,42695.5347107438,"12871.1882368251",17468.469328331,67922.6000931566
+"160","Basin","ZONE 1","Escherichia_Coli_Quanti_Tray","Std. Deviation",11,206.628978390602,"31.1456513434772",145.584623482345,267.673333298859
+"161","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","5Pct",0,89.55,"",89.55,89.55
+"162","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","10Pct",0,91.7,"",91.7,91.7
+"163","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","25Pct",1,119.375,"",1,723.247056868039
+"164","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","50Pct",2,687.9,"",93.1105810604102,1963.61674253678
+"165","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","75Pct",3,954.75,"",139.364460593904,2419.6
+"166","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","90Pct",4,2076.25,"",717.094400481275,2419.6
+"167","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","95Pct",4,2247.925,"",808.735873556739,2419.6
+"168","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","Mean",5,879.9,"327.063492082978",238.867334859463,1520.93266514054
+"169","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","Variance",5,713593.064,"374156.709006294",0,1446926.73822637
+"170","Basin","ZONE 2","Escherichia_Coli_Quanti_Tray","Std. Deviation",5,844.744377903754,"221.461496988456",410.687819844055,1278.80093596345
+"171","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","5Pct",0,2.47,"",2.47,2.47
+"172","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","10Pct",0,3.94,"",3.94,3.94
+"173","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","25Pct",1,13.975,"",1,128.447201698878
+"174","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","50Pct",3,127.55,"",10.7443442766933,163.935846988136
+"175","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","75Pct",5,162.5,"",69.5290637069728,2419.6
+"176","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","90Pct",6,1938.91,"",158.689526567581,2419.6
+"177","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","95Pct",6,2179.255,"",160.614526567581,2419.6
+"178","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","Mean",7,426.142857142857,"280.178283902823",-122.996488556915,975.282202842629
+"179","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","Variance",7,666107.916734694,"471001.876200531",0,1589254.63073853
+"180","Basin","ZONE 3","Escherichia_Coli_Quanti_Tray","Std. Deviation",7,816.154346147035,"288.549511758452",250.607695343852,1381.70099695022
+"181","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","5Pct",1,1,"",1,161.146366311824
+"182","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","10Pct",1,1,"",1,224.099912836554
+"183","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","25Pct",1,160.825,"",1,224.624912836554
+"184","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","50Pct",2,224.35,"",1,760.610784481811
+"185","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","75Pct",3,262.8,"",161.096097832913,780
+"186","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","90Pct",4,753.5,"",224.580945926786,780
+"187","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","95Pct",4,766.75,"",228.76007582959,780
+"188","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","Mean",5,288.48,"112.243835098543",68.4861257202028,508.473874279797
+"189","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","Variance",5,68934.6456,"38552.1364941114",0,144495.444655531
+"190","Basin","ZONE 4","Escherichia_Coli_Quanti_Tray","Std. Deviation",5,262.554081286123,"73.4175151748995",118.658395708897,406.449766863349
+"191","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","5Pct",0,18.9,"",18.9,18.9
+"192","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","10Pct",0,19.1,"",19.1,19.1
+"193","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","25Pct",1,25.05,"",1,144.987886330012
+"194","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","50Pct",2,144.45,"",19.0400761381488,2127.68714491655
+"195","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","75Pct",3,173,"",33.10606043865,2419.6
+"196","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","90Pct",4,2076.25,"",144.889325731532,2419.6
+"197","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","95Pct",4,2247.925,"",167.714605852252,2419.6
+"198","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","Mean",5,560.2,"380.673736710792",-185.906813813436,1306.30681381344
+"199","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","Variance",5,867836.628,"531814.324511332",0,1910173.55050471
+"200","Basin","ZONE 5","Escherichia_Coli_Quanti_Tray","Std. Deviation",5,931.577494361043,"285.437512032263",372.13025094109,1491.024737781
+"201","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","5Pct",0,145.475,"",145.475,145.475
+"202","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","10Pct",0,145.95,"",145.95,145.95
+"203","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","25Pct",1,187.4,"",1,610.018503795366
+"204","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","50Pct",2,596.25,"",145.935369669886,2081.53770931015
+"205","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","75Pct",3,1552.925,"",213.322678788962,2419.6
+"206","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","90Pct",4,2076.25,"",605.442678596794,2419.6
+"207","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","95Pct",4,2247.925,"",1029.39916385259,2419.6
+"208","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","Mean",5,1027.3,"373.902716524301",294.46414189068,1760.13585810932
+"209","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","Variance",5,805665.468,"268779.619360862",278867.094274326,1332463.84172567
+"210","Basin","ZONE 6","Escherichia_Coli_Quanti_Tray","Std. Deviation",5,897.588696452891,"149.723152944679",604.136709029539,1191.04068387624
+"211","Combined","All Basins","Chlorophyll_A_Monochromatic","5Pct",3,0.82,"",0.82,0.889373283761506
+"212","Combined","All Basins","Chlorophyll_A_Monochromatic","10Pct",3,0.82,"",0.82,1.4210357094423
+"213","Combined","All Basins","Chlorophyll_A_Monochromatic","25Pct",6,1.53336218727103,"",1.31033376957467,1.57546976673337
+"214","Combined","All Basins","Chlorophyll_A_Monochromatic","50Pct",17,2.10822156332807,"",1.57758840427642,3.52806913001456
+"215","Combined","All Basins","Chlorophyll_A_Monochromatic","75Pct",25,5.02161968237104,"",2.83631712882487,11.9035631739968
+"216","Combined","All Basins","Chlorophyll_A_Monochromatic","90Pct",34,11.8726952832495,"",5.29179494194007,50
+"217","Combined","All Basins","Chlorophyll_A_Monochromatic","95Pct",36,31.1819300195046,"",9.65206249279014,50
+"218","Combined","All Basins","Chlorophyll_A_Monochromatic","Mean",38,6.80563271891925,"2.14817355306097",2.5952899223783,11.0159755154602
+"219","Combined","All Basins","Chlorophyll_A_Monochromatic","Variance",38,123.776464339612,"67.19965285167",0,255.485363702479
+"220","Combined","All Basins","Chlorophyll_A_Monochromatic","Std. Deviation",38,9.81389819785956,"2.46589803040275",4.98082686872192,14.6469695269972
+"221","Basin","ZONE 1","Chlorophyll_A_Monochromatic","5Pct",3,0.82,"",0.82,0.82
+"222","Basin","ZONE 1","Chlorophyll_A_Monochromatic","10Pct",3,0.82,"",0.82,0.82
+"223","Basin","ZONE 1","Chlorophyll_A_Monochromatic","25Pct",3,0.82,"",0.82,1.58136894838425
+"224","Basin","ZONE 1","Chlorophyll_A_Monochromatic","50Pct",5,1.95,"",0.82,3.06422765453911
+"225","Basin","ZONE 1","Chlorophyll_A_Monochromatic","75Pct",8,2.975,"",1.95414080962275,49.4616947490427
+"226","Basin","ZONE 1","Chlorophyll_A_Monochromatic","90Pct",9,5,"",2.68876537007484,50
+"227","Basin","ZONE 1","Chlorophyll_A_Monochromatic","95Pct",10,42.85,"",3.2810566822268,50
+"228","Basin","ZONE 1","Chlorophyll_A_Monochromatic","Mean",11,6.50545454545455,"3.91448354880592",-1.16679222827959,14.1777013191887
+"229","Basin","ZONE 1","Chlorophyll_A_Monochromatic","Variance",11,190.723352066116,"153.274416057916",0,491.135687291038
+"230","Basin","ZONE 1","Chlorophyll_A_Monochromatic","Std. Deviation",11,13.8102625632576,"5.54929406142154",2.93384606324942,24.6866790632659
+"231","Basin","ZONE 2","Chlorophyll_A_Monochromatic","5Pct",0,0.86,"",0.86,0.86
+"232","Basin","ZONE 2","Chlorophyll_A_Monochromatic","10Pct",0,0.9,"",0.9,0.9
+"233","Basin","ZONE 2","Chlorophyll_A_Monochromatic","25Pct",1,1.35,"",0.82,1.54775958985818
+"234","Basin","ZONE 2","Chlorophyll_A_Monochromatic","50Pct",2,1.525,"",0.877010855730264,3.92184107584293
+"235","Basin","ZONE 2","Chlorophyll_A_Monochromatic","75Pct",2,1.5875,"",1.42126356966283,4.1
+"236","Basin","ZONE 2","Chlorophyll_A_Monochromatic","90Pct",4,3.85,"",1.5436664964714,4.1
+"237","Basin","ZONE 2","Chlorophyll_A_Monochromatic","95Pct",4,3.975,"",1.5561664964714,4.1
+"238","Basin","ZONE 2","Chlorophyll_A_Monochromatic","Mean",5,1.956,"0.467132902110817",1.04043633586912,2.87156366413087
+"239","Basin","ZONE 2","Chlorophyll_A_Monochromatic","Variance",5,1.202144,"0.701038250705349",0,2.57615372316744
+"240","Basin","ZONE 2","Chlorophyll_A_Monochromatic","Std. Deviation",5,1.09642327592951,"0.319693254464628",0.46983601107844,1.72301054078058
+"241","Basin","ZONE 3","Chlorophyll_A_Monochromatic","5Pct",0,1.092,"",1.092,1.092
+"242","Basin","ZONE 3","Chlorophyll_A_Monochromatic","10Pct",0,1.204,"",1.204,1.204
+"243","Basin","ZONE 3","Chlorophyll_A_Monochromatic","25Pct",1,1.5375,"",1.01465584619626,1.63917004806367
+"244","Basin","ZONE 3","Chlorophyll_A_Monochromatic","50Pct",3,1.65,"",1.50777425894562,2.58445148210875
+"245","Basin","ZONE 3","Chlorophyll_A_Monochromatic","75Pct",5,2.525,"",1.60672609539652,11
+"246","Basin","ZONE 3","Chlorophyll_A_Monochromatic","90Pct",6,9.11,"",1.7522562639178,11
+"247","Basin","ZONE 3","Chlorophyll_A_Monochromatic","95Pct",6,10.055,"",1.7872562639178,11
+"248","Basin","ZONE 3","Chlorophyll_A_Monochromatic","Mean",7,3.08571428571429,"1.2066138609061",0.720794575091511,5.45063399633706
+"249","Basin","ZONE 3","Chlorophyll_A_Monochromatic","Variance",7,10.5783673469388,"7.87034497242159",0,26.003960038791
+"250","Basin","ZONE 3","Chlorophyll_A_Monochromatic","Std. Deviation",7,3.25244021419899,"1.20991385761105",0.881052628885418,5.62382779951256
+"251","Basin","ZONE 4","Chlorophyll_A_Monochromatic","5Pct",0,1.525,"",1.525,1.525
+"252","Basin","ZONE 4","Chlorophyll_A_Monochromatic","10Pct",0,1.55,"",1.55,1.55
+"253","Basin","ZONE 4","Chlorophyll_A_Monochromatic","25Pct",1,3.525,"",0.82,5.45709304945919
+"254","Basin","ZONE 4","Chlorophyll_A_Monochromatic","50Pct",2,5.3,"",1.53658342550602,28.5858121336161
+"255","Basin","ZONE 4","Chlorophyll_A_Monochromatic","75Pct",3,11.75,"",3.57921956658258,37
+"256","Basin","ZONE 4","Chlorophyll_A_Monochromatic","90Pct",4,25.5,"",5.43196910102039,37
+"257","Basin","ZONE 4","Chlorophyll_A_Monochromatic","95Pct",4,31.25,"",11.079922752551,37
+"258","Basin","ZONE 4","Chlorophyll_A_Monochromatic","Mean",5,11.94,"5.47469846731323",1.20978817784945,22.6702118221506
+"259","Basin","ZONE 4","Chlorophyll_A_Monochromatic","Variance",5,169.1904,"99.2451516725967",0,363.707322918505
+"260","Basin","ZONE 4","Chlorophyll_A_Monochromatic","Std. Deviation",5,13.0073210154897,"3.81497279702758",5.53011173131561,20.4845302996638
+"261","Basin","ZONE 5","Chlorophyll_A_Monochromatic","5Pct",0,1.825,"",1.825,1.825
+"262","Basin","ZONE 5","Chlorophyll_A_Monochromatic","10Pct",0,1.85,"",1.85,1.85
+"263","Basin","ZONE 5","Chlorophyll_A_Monochromatic","25Pct",1,2.125,"",0.82,3.39542907993448
+"264","Basin","ZONE 5","Chlorophyll_A_Monochromatic","50Pct",2,3.15,"",1.83628856053446,6.79113431839662
+"265","Basin","ZONE 5","Chlorophyll_A_Monochromatic","75Pct",3,4.85,"",2.31490045722365,6.9
+"266","Basin","ZONE 5","Chlorophyll_A_Monochromatic","90Pct",4,6.75,"",3.33270869908311,6.9
+"267","Basin","ZONE 5","Chlorophyll_A_Monochromatic","95Pct",4,6.825,"",4.11101242726158,6.9
+"268","Basin","ZONE 5","Chlorophyll_A_Monochromatic","Mean",5,3.98,"0.809315829007479",2.39377012302717,5.56622987697283
+"269","Basin","ZONE 5","Chlorophyll_A_Monochromatic","Variance",5,3.3056,"1.30765512515227",0.742643050502337,5.86855694949766
+"270","Basin","ZONE 5","Chlorophyll_A_Monochromatic","Std. Deviation",5,1.81813090837816,"0.359615228784253",1.11329801166889,2.52296380508743
+"271","Basin","ZONE 6","Chlorophyll_A_Monochromatic","5Pct",0,5.6,"",5.6,5.6
+"272","Basin","ZONE 6","Chlorophyll_A_Monochromatic","10Pct",0,5.7,"",5.7,5.7
+"273","Basin","ZONE 6","Chlorophyll_A_Monochromatic","25Pct",1,5.975,"",0.82,6.5414888394185
+"274","Basin","ZONE 6","Chlorophyll_A_Monochromatic","50Pct",2,6.4,"",5.71248097368002,12.9375951315999
+"275","Basin","ZONE 6","Chlorophyll_A_Monochromatic","75Pct",3,7.95,"",6.12113874498973,14
+"276","Basin","ZONE 6","Chlorophyll_A_Monochromatic","90Pct",4,13,"",6.53657562260694,14
+"277","Basin","ZONE 6","Chlorophyll_A_Monochromatic","95Pct",4,13.5,"",7.02801467912428,14
+"278","Basin","ZONE 6","Chlorophyll_A_Monochromatic","Mean",5,8.2,"1.24891757552762",5.75216653230678,10.6478334676932
+"279","Basin","ZONE 6","Chlorophyll_A_Monochromatic","Variance",5,9.1,"5.35548827654517",0,19.596564141655
+"280","Basin","ZONE 6","Chlorophyll_A_Monochromatic","Std. Deviation",5,3.01662062579967,"0.887663538255741",1.27683206042903,4.75640919117032
+"281","Combined","All Basins","Ammonia_Total_as_N","5Pct",1,0.00236093132491767,"",0.002,0.00409383139276195
+"282","Combined","All Basins","Ammonia_Total_as_N","10Pct",2,0.00372186264983534,"",0.002,0.00559985770832633
+"283","Combined","All Basins","Ammonia_Total_as_N","25Pct",7,0.00864302468927458,"",0.00497728997695683,0.0156226873304497
+"284","Combined","All Basins","Ammonia_Total_as_N","50Pct",17,0.0227945578548688,"",0.0183240296028792,0.0363330403630004
+"285","Combined","All Basins","Ammonia_Total_as_N","75Pct",28,0.0519690478487361,"",0.0426273130400988,0.0937312189117526
+"286","Combined","All Basins","Ammonia_Total_as_N","90Pct",36,0.151847523745264,"",0.0545034150473273,0.29
+"287","Combined","All Basins","Ammonia_Total_as_N","95Pct",37,0.175542571235792,"",0.0972307675110246,0.29
+"288","Combined","All Basins","Ammonia_Total_as_N","Mean",38,0.0509904955496432,"0.0106638659199849",0.0300897024105086,0.0718912886887777
+"289","Combined","All Basins","Ammonia_Total_as_N","Variance",38,0.00248439680595375,"0.000965944208967218",0.00059118094530297,0.00437761266660453
+"290","Combined","All Basins","Ammonia_Total_as_N","Std. Deviation",38,0.0372366735340866,"0.00557484888248501",0.0263101705051626,0.0481631765630105
+"291","Basin","ZONE 1","Ammonia_Total_as_N","5Pct",1,0.002,"",0.002,0.00328998252623813
+"292","Basin","ZONE 1","Ammonia_Total_as_N","10Pct",1,0.0021,"",0.002,0.00383998252623813
+"293","Basin","ZONE 1","Ammonia_Total_as_N","25Pct",2,0.00375,"",0.002,0.0117487534243403
+"294","Basin","ZONE 1","Ammonia_Total_as_N","50Pct",5,0.0185,"",0.00837139118856378,0.0226286088114362
+"295","Basin","ZONE 1","Ammonia_Total_as_N","75Pct",8,0.023125,"",0.0187916705736616,0.0454166588526769
+"296","Basin","ZONE 1","Ammonia_Total_as_N","90Pct",8,0.02395,"",0.0224416705736616,0.046
+"297","Basin","ZONE 1","Ammonia_Total_as_N","95Pct",10,0.0449,"",0.0233436119158763,0.046
+"298","Basin","ZONE 1","Ammonia_Total_as_N","Mean",11,0.0171818181818182,"0.00275145914875264",0.0117890573453298,0.0225745790183066
+"299","Basin","ZONE 1","Ammonia_Total_as_N","Variance",11,0.00015396694214876,"6.67500528410149e-05",2.31392426142256e-05,0.000284794641683295
+"300","Basin","ZONE 1","Ammonia_Total_as_N","Std. Deviation",11,0.0124083416357207,"0.00268972497698069",0.00713657755252074,0.0176801057189207
+"301","Basin","ZONE 2","Ammonia_Total_as_N","5Pct",0,0.0065,"",0.0065,0.0065
+"302","Basin","ZONE 2","Ammonia_Total_as_N","10Pct",0,0.007,"",0.007,0.007
+"303","Basin","ZONE 2","Ammonia_Total_as_N","25Pct",1,0.00925,"",0.002,0.0238766700705719
+"304","Basin","ZONE 2","Ammonia_Total_as_N","50Pct",2,0.0235,"",0.00696207597200855,0.105189620139957
+"305","Basin","ZONE 2","Ammonia_Total_as_N","75Pct",3,0.05375,"",0.00960631784831415,0.11
+"306","Basin","ZONE 2","Ammonia_Total_as_N","90Pct",4,0.105,"",0.023797991600153,0.11
+"307","Basin","ZONE 2","Ammonia_Total_as_N","95Pct",4,0.1075,"",0.053047991600153,0.11
+"308","Basin","ZONE 2","Ammonia_Total_as_N","Mean",5,0.0412,"0.0166620743221131",0.00854293442092861,0.0738570655790714
+"309","Basin","ZONE 2","Ammonia_Total_as_N","Variance",5,0.00145376,"0.000738823263837518",5.69301193813166e-06,0.00290182698806187
+"310","Basin","ZONE 2","Ammonia_Total_as_N","Std. Deviation",5,0.0381282047833359,"0.00968867099875134",0.0191387585677256,0.0571176509989463
+"311","Basin","ZONE 3","Ammonia_Total_as_N","5Pct",0,0.00423333333333333,"",0.00423333333333333,0.00423333333333333
+"312","Basin","ZONE 3","Ammonia_Total_as_N","10Pct",0,0.00446666666666667,"",0.00446666666666667,0.00446666666666667
+"313","Basin","ZONE 3","Ammonia_Total_as_N","25Pct",0,0.00516666666666667,"",0.00516666666666667,0.00516666666666667
+"314","Basin","ZONE 3","Ammonia_Total_as_N","50Pct",3,0.0085,"",0.00465491583357504,0.0540528787489123
+"315","Basin","ZONE 3","Ammonia_Total_as_N","75Pct",5,0.01825,"",0.00597765149554732,0.057
+"316","Basin","ZONE 3","Ammonia_Total_as_N","90Pct",6,0.0549,"",0.0165799250101038,0.057
+"317","Basin","ZONE 3","Ammonia_Total_as_N","95Pct",6,0.05595,"",0.0179799250101038,0.057
+"318","Basin","ZONE 3","Ammonia_Total_as_N","Mean",7,0.0172857142857143,"0.00597730609978124",0.00557040960557148,0.0290010189658571
+"319","Basin","ZONE 3","Ammonia_Total_as_N","Variance",7,0.000290204081632653,"0.000181221995300014",0,0.000645392665627168
+"320","Basin","ZONE 3","Ammonia_Total_as_N","Std. Deviation",7,0.0170353773551587,"0.00531898975648862",0.00661034899830351,0.0274604057120138
+"321","Basin","ZONE 4","Ammonia_Total_as_N","5Pct",0,0.04175,"",0.04175,0.04175
+"322","Basin","ZONE 4","Ammonia_Total_as_N","10Pct",0,0.0425,"",0.0425,0.0425
+"323","Basin","ZONE 4","Ammonia_Total_as_N","25Pct",1,0.05,"",0.002,0.0972487488154705
+"324","Basin","ZONE 4","Ammonia_Total_as_N","50Pct",2,0.0895,"",0.0421664703791532,0.243341184833873
+"325","Basin","ZONE 4","Ammonia_Total_as_N","75Pct",3,0.165,"",0.0514633370202407,0.29
+"326","Basin","ZONE 4","Ammonia_Total_as_N","90Pct",4,0.23,"",0.0970026149033925,0.29
+"327","Basin","ZONE 4","Ammonia_Total_as_N","95Pct",4,0.26,"",0.152145347527041,0.29
+"328","Basin","ZONE 4","Ammonia_Total_as_N","Mean",5,0.1314,"0.0396904840223927",0.0536080807871479,0.209191919212852
+"329","Basin","ZONE 4","Ammonia_Total_as_N","Variance",5,0.00828304,"0.00366978066684015",0.00109040206183192,0.0154756779381681
+"330","Basin","ZONE 4","Ammonia_Total_as_N","Std. Deviation",5,0.0910112081009806,"0.0201611468708798",0.0514960863470338,0.130526329854927
+"331","Basin","ZONE 5","Ammonia_Total_as_N","5Pct",0,0.01025,"",0.01025,0.01025
+"332","Basin","ZONE 5","Ammonia_Total_as_N","10Pct",0,0.0105,"",0.0105,0.0105
+"333","Basin","ZONE 5","Ammonia_Total_as_N","25Pct",1,0.0125,"",0.002,0.0336863425801456
+"334","Basin","ZONE 5","Ammonia_Total_as_N","50Pct",2,0.0305,"",0.0103563178483141,0.0479310464550576
+"335","Basin","ZONE 5","Ammonia_Total_as_N","75Pct",3,0.03925,"",0.0132257712106892,0.049
+"336","Basin","ZONE 5","Ammonia_Total_as_N","90Pct",4,0.0475,"",0.0332957092006552,0.049
+"337","Basin","ZONE 5","Ammonia_Total_as_N","95Pct",4,0.04825,"",0.0350457092006552,0.049
+"338","Basin","ZONE 5","Ammonia_Total_as_N","Mean",5,0.0298,"0.00662751137495525",0.0168103163979582,0.0427896836020418
+"339","Basin","ZONE 5","Ammonia_Total_as_N","Variance",5,0.00022296,"5.85495017867608e-05",0.000108205085185185,0.000337714914814815
+"340","Basin","ZONE 5","Ammonia_Total_as_N","Std. Deviation",5,0.0149318451639441,"0.00196055816089428",0.0110892217789952,0.018774468548893
+"341","Basin","ZONE 6","Ammonia_Total_as_N","5Pct",0,0.0195,"",0.0195,0.0195
+"342","Basin","ZONE 6","Ammonia_Total_as_N","10Pct",0,0.02,"",0.02,0.02
+"343","Basin","ZONE 6","Ammonia_Total_as_N","25Pct",1,0.02475,"",0.002,0.067583359608285
+"344","Basin","ZONE 6","Ammonia_Total_as_N","50Pct",2,0.0625,"",0.0197245770691279,0.135508458617441
+"345","Basin","ZONE 6","Ammonia_Total_as_N","75Pct",3,0.07625,"",0.0258501711426105,0.15
+"346","Basin","ZONE 6","Ammonia_Total_as_N","90Pct",4,0.13,"",0.0662558296216908,0.15
+"347","Basin","ZONE 6","Ammonia_Total_as_N","95Pct",4,0.14,"",0.0690058296216907,0.15
+"348","Basin","ZONE 6","Ammonia_Total_as_N","Mean",5,0.069,"0.0202751664723852",0.029261403933571,0.108738596066429
+"349","Basin","ZONE 6","Ammonia_Total_as_N","Variance",5,0.002146,"0.0010054521703399",0.000175349957956166,0.00411665004204383
+"350","Basin","ZONE 6","Ammonia_Total_as_N","Std. Deviation",5,0.0463249392876019,"0.0108521693260912",0.0250550782543328,0.0675948003208709
+"351","Combined","All Basins","TN","5Pct",1,0.225626124069154,"",0.2,0.290111784246931
+"352","Combined","All Basins","TN","10Pct",2,0.284715390346871,"",0.2,0.383825848958496
+"353","Combined","All Basins","TN","25Pct",8,0.484477730654205,"",0.327432427502046,0.618386656927905
+"354","Combined","All Basins","TN","50Pct",18,0.907141947459599,"",0.627748265151362,1.14648104903204
+"355","Combined","All Basins","TN","75Pct",30,1.54661127787257,"",1.04462926789998,2.21645224375587
+"356","Combined","All Basins","TN","90Pct",34,2.28331652964144,"",2.03385568541603,2.704
+"357","Combined","All Basins","TN","95Pct",37,2.60861880936316,"",2.20684492064119,2.704
+"358","Combined","All Basins","TN","Mean",38,1.13705335264044,"0.104771991436557",0.93170402283625,1.34240268244463
+"359","Combined","All Basins","TN","Variance",38,0.381532356376203,"0.103537978336266",0.178601647805033,0.584463064947373
+"360","Combined","All Basins","TN","Std. Deviation",38,0.611725906295048,"0.0829643538354976",0.449118760776835,0.774333051813261
+"361","Basin","ZONE 1","TN","5Pct",1,0.2,"",0.2,0.274804694895733
+"362","Basin","ZONE 1","TN","10Pct",1,0.2071,"",0.2,0.285254694895733
+"363","Basin","ZONE 1","TN","25Pct",2,0.28525,"",0.2,0.468807973269343
+"364","Basin","ZONE 1","TN","50Pct",5,0.517,"",0.294688294328044,0.946398862749187
+"365","Basin","ZONE 1","TN","75Pct",8,0.991,"",0.619886522526787,2.32528369368303
+"366","Basin","ZONE 1","TN","90Pct",9,1.003,"",0.975030560864755,2.36
+"367","Basin","ZONE 1","TN","95Pct",10,2.338,"",0.993298235749456,2.36
+"368","Basin","ZONE 1","TN","Mean",11,0.727181818181818,"0.130238466074494",0.471919115274067,0.982444521089569
+"369","Basin","ZONE 1","TN","Variance",11,0.354172512396694,"0.196924912175409",0,0.740138247919209
+"370","Basin","ZONE 1","TN","Std. Deviation",11,0.595123947087238,"0.165448654132668",0.270850543696586,0.919397350477891
+"371","Basin","ZONE 2","TN","5Pct",0,0.6665,"",0.6665,0.6665
+"372","Basin","ZONE 2","TN","10Pct",0,0.669,"",0.669,0.669
+"373","Basin","ZONE 2","TN","25Pct",1,0.888,"",0.2,1.11732811759786
+"374","Basin","ZONE 2","TN","50Pct",2,1.111,"",0.670640210535361,2.2462936630575
+"375","Basin","ZONE 2","TN","75Pct",3,1.2575,"",0.893101142072231,2.32
+"376","Basin","ZONE 2","TN","90Pct",4,2.2645,"",1.11512731483971,2.32
+"377","Basin","ZONE 2","TN","95Pct",4,2.29225,"",1.12633432572756,2.32
+"378","Basin","ZONE 2","TN","Mean",5,1.2626,"0.239698576657348",0.792799422606086,1.73240057739391
+"379","Basin","ZONE 2","TN","Variance",5,0.32416624,"0.184374424744246",0,0.685533472169013
+"380","Basin","ZONE 2","TN","Std. Deviation",5,0.569355987059063,"0.161914890626345",0.252008632870684,0.886703341247442
+"381","Basin","ZONE 3","TN","5Pct",0,0.3935,"",0.3935,0.3935
+"382","Basin","ZONE 3","TN","10Pct",0,0.411,"",0.411,0.411
+"383","Basin","ZONE 3","TN","25Pct",1,0.4305,"",0.383352528283512,0.652353089817936
+"384","Basin","ZONE 3","TN","50Pct",3,0.655,"",0.426417209201559,1.41609604672995
+"385","Basin","ZONE 3","TN","75Pct",5,1.40725,"",0.651865074603108,2.004
+"386","Basin","ZONE 3","TN","90Pct",6,1.7961,"",0.800532792309813,2.004
+"387","Basin","ZONE 3","TN","95Pct",6,1.90005,"",1.40410789375172,2.004
+"388","Basin","ZONE 3","TN","Mean",7,0.913571428571428,"0.167202138997463",0.585861257998341,1.24128159914452
+"389","Basin","ZONE 3","TN","Variance",7,0.293937673469388,"0.13028978137498",0.0385743944208292,0.549300952517946
+"390","Basin","ZONE 3","TN","Std. Deviation",7,0.542160191704802,"0.120158011754136",0.306654816212756,0.777665567196848
+"391","Basin","ZONE 4","TN","5Pct",0,0.5915,"",0.5915,0.5915
+"392","Basin","ZONE 4","TN","10Pct",0,0.599,"",0.599,0.599
+"393","Basin","ZONE 4","TN","25Pct",1,1.44275,"",0.2,2.17779760776639
+"394","Basin","ZONE 4","TN","50Pct",2,2.104,"",0.595664703791532,2.66511765402823
+"395","Basin","ZONE 4","TN","75Pct",3,2.20775,"",1.4804309282712,2.704
+"396","Basin","ZONE 4","TN","90Pct",4,2.654,"",2.17545347527041,2.704
+"397","Basin","ZONE 4","TN","95Pct",4,2.679,"",2.20453633688176,2.704
+"398","Basin","ZONE 4","TN","Mean",5,1.8502,"0.310329100884863",1.24196613891097,2.45843386108903
+"399","Basin","ZONE 4","TN","Variance",5,0.52402176,"0.223394180338837",0.0861772121800332,0.961866307819967
+"400","Basin","ZONE 4","TN","Std. Deviation",5,0.72389347282594,"0.154300452155446",0.42147014380302,1.02631680184886
+"401","Basin","ZONE 5","TN","5Pct",0,0.703,"",0.703,0.703
+"402","Basin","ZONE 5","TN","10Pct",0,0.732,"",0.732,0.732
+"403","Basin","ZONE 5","TN","25Pct",1,1.029,"",0.2,1.3478335035286
+"404","Basin","ZONE 5","TN","50Pct",2,1.329,"",0.729800406376496,1.62666665633729
+"405","Basin","ZONE 5","TN","75Pct",2,1.3915,"",1.07710379860043,1.707
+"406","Basin","ZONE 5","TN","90Pct",4,1.6235,"",1.34896935143325,1.707
+"407","Basin","ZONE 5","TN","95Pct",4,1.66525,"",1.36146935143325,1.707
+"408","Basin","ZONE 5","TN","Mean",5,1.2818,"0.123213442798845",1.04030608970308,1.52329391029692
+"409","Basin","ZONE 5","TN","Variance",5,0.09682816,"0.0427238315886505",0.0130909888046904,0.18056533119531
+"410","Basin","ZONE 5","TN","Std. Deviation",5,0.311172235265295,"0.0686498131046711",0.176621074034734,0.445723396495856
+"411","Basin","ZONE 6","TN","5Pct",0,0.4365,"",0.4365,0.4365
+"412","Basin","ZONE 6","TN","10Pct",0,0.441,"",0.441,0.441
+"413","Basin","ZONE 6","TN","25Pct",1,0.82575,"",0.2,0.976396155164801
+"414","Basin","ZONE 6","TN","50Pct",2,0.9435,"",0.439692514670686,2.49972369001959
+"415","Basin","ZONE 6","TN","75Pct",3,1.535,"",0.864641686274207,2.604
+"416","Basin","ZONE 6","TN","90Pct",4,2.482,"",0.970272505129954,2.604
+"417","Basin","ZONE 6","TN","95Pct",4,2.543,"",1.52075752798494,2.604
+"418","Basin","ZONE 6","TN","Mean",5,1.2938,"0.314798740128856",0.676805806968859,1.91079419303114
+"419","Basin","ZONE 6","TN","Variance",5,0.54972976,"0.275411075913144",0.00993397026681064,1.08952554973319
+"420","Basin","ZONE 6","TN","Std. Deviation",5,0.741437630552969,"0.185727743348919",0.377417942659189,1.10545731844675
+"421","Combined","All Basins","Phosphorus_Total_as_P","5Pct",2,0.002,"",0.002,0.00856371993764174
+"422","Combined","All Basins","Phosphorus_Total_as_P","10Pct",2,0.00560931324917669,"",0.002,0.0127363341912932
+"423","Combined","All Basins","Phosphorus_Total_as_P","25Pct",8,0.015292706081014,"",0.011654710947653,0.0225679388083264
+"424","Combined","All Basins","Phosphorus_Total_as_P","50Pct",17,0.0502757617142695,"",0.0236227470218124,0.0813287590053129
+"425","Combined","All Basins","Phosphorus_Total_as_P","75Pct",27,0.117456364584297,"",0.0702064977886582,0.701428291410998
+"426","Combined","All Basins","Phosphorus_Total_as_P","90Pct",35,0.704775857495316,"",0.137536466295405,1
+"427","Combined","All Basins","Phosphorus_Total_as_P","95Pct",36,0.744511812471999,"",0.591036881092538,1
+"428","Combined","All Basins","Phosphorus_Total_as_P","Mean",38,0.180834822055031,"0.0392425505576199",0.103920836300604,0.257748807809459
+"429","Combined","All Basins","Phosphorus_Total_as_P","Variance",38,0.044645400018646,"0.00979149473345484",0.0254544229862609,0.0638363770510311
+"430","Combined","All Basins","Phosphorus_Total_as_P","Std. Deviation",38,0.151749667380478,"0.0142331075921245",0.12385328911183,0.179646045649125
+"431","Basin","ZONE 1","Phosphorus_Total_as_P","5Pct",2,0.002,"",0.002,0.00474376712170127
+"432","Basin","ZONE 1","Phosphorus_Total_as_P","10Pct",2,0.002,"",0.002,0.00749376712170127
+"433","Basin","ZONE 1","Phosphorus_Total_as_P","25Pct",2,0.00575,"",0.002,0.0134975068486805
+"434","Basin","ZONE 1","Phosphorus_Total_as_P","50Pct",5,0.0145,"",0.00892601671173808,0.0330739832882619
+"435","Basin","ZONE 1","Phosphorus_Total_as_P","75Pct",8,0.03575,"",0.014606600913909,0.11893399086091
+"436","Basin","ZONE 1","Phosphorus_Total_as_P","90Pct",9,0.0941,"",0.032618296202394,0.12
+"437","Basin","ZONE 1","Phosphorus_Total_as_P","95Pct",10,0.1145,"",0.0374736768120917,0.12
+"438","Basin","ZONE 1","Phosphorus_Total_as_P","Mean",11,0.0327272727272727,"0.00991883498735041",0.0132867133834701,0.0521678320710753
+"439","Basin","ZONE 1","Phosphorus_Total_as_P","Variance",11,0.0014078347107438,"0.000631064600877526",0.000170970821105708,0.0026446986003819
+"440","Basin","ZONE 1","Phosphorus_Total_as_P","Std. Deviation",11,0.0375211235272053,"0.0084094576808176",0.0210388893432891,0.0540033577111216
+"441","Basin","ZONE 2","Phosphorus_Total_as_P","5Pct",0,0.0125,"",0.0125,0.0125
+"442","Basin","ZONE 2","Phosphorus_Total_as_P","10Pct",0,0.013,"",0.013,0.013
+"443","Basin","ZONE 2","Phosphorus_Total_as_P","25Pct",1,0.0625,"",0.002,0.10790858159869
+"444","Basin","ZONE 2","Phosphorus_Total_as_P","50Pct",2,0.103,"",0.0129090329757895,0.904551537542099
+"445","Basin","ZONE 2","Phosphorus_Total_as_P","75Pct",3,0.2675,"",0.0632126356966283,1
+"446","Basin","ZONE 2","Phosphorus_Total_as_P","90Pct",4,0.895,"",0.107127314839709,1
+"447","Basin","ZONE 2","Phosphorus_Total_as_P","95Pct",4,0.9475,"",0.260448082028363,1
+"448","Basin","ZONE 2","Phosphorus_Total_as_P","Mean",5,0.2916,"0.158838811389238",-0.0197183496700574,0.602918349670057
+"449","Basin","ZONE 2","Phosphorus_Total_as_P","Variance",5,0.13282784,"0.0813953174670118",0,0.292359730745547
+"450","Basin","ZONE 2","Phosphorus_Total_as_P","Std. Deviation",5,0.364455539126517,"0.111667005613484",0.145592229862657,0.583318848390377
+"451","Basin","ZONE 3","Phosphorus_Total_as_P","5Pct",0,0.0157,"",0.0157,0.0157
+"452","Basin","ZONE 3","Phosphorus_Total_as_P","10Pct",0,0.0164,"",0.0164,0.0164
+"453","Basin","ZONE 3","Phosphorus_Total_as_P","25Pct",1,0.01975,"",0.0152754376505716,0.0627245623494284
+"454","Basin","ZONE 3","Phosphorus_Total_as_P","50Pct",3,0.063,"",0.0168926981218293,0.130536509390854
+"455","Basin","ZONE 3","Phosphorus_Total_as_P","75Pct",5,0.0995,"",0.0478235788377952,0.14
+"456","Basin","ZONE 3","Phosphorus_Total_as_P","90Pct",6,0.133,"",0.0729790531351611,0.14
+"457","Basin","ZONE 3","Phosphorus_Total_as_P","95Pct",6,0.1365,"",0.0768290531351611,0.14
+"458","Basin","ZONE 3","Phosphorus_Total_as_P","Mean",7,0.068,"0.015601799548089",0.0374210347917322,0.0985789652082678
+"459","Basin","ZONE 3","Phosphorus_Total_as_P","Variance",7,0.00176428571428571,"0.000628839909383373",0.000531782139852872,0.00299678928871856
+"460","Basin","ZONE 3","Phosphorus_Total_as_P","Std. Deviation",7,0.0420034012228262,"0.00748558320369588",0.0273319277403043,0.056674874705348
+"461","Basin","ZONE 4","Phosphorus_Total_as_P","5Pct",0,0.0225,"",0.0225,0.0225
+"462","Basin","ZONE 4","Phosphorus_Total_as_P","10Pct",0,0.025,"",0.025,0.025
+"463","Basin","ZONE 4","Phosphorus_Total_as_P","25Pct",1,0.05525,"",0.002,0.660696411649578
+"464","Basin","ZONE 4","Phosphorus_Total_as_P","50Pct",2,0.55,"",0.0257964931253414,0.743628054997269
+"465","Basin","ZONE 4","Phosphorus_Total_as_P","75Pct",3,0.7075,"",0.0591825118128535,0.79
+"466","Basin","ZONE 4","Phosphorus_Total_as_P","90Pct",4,0.75,"",0.648976825765294,0.79
+"467","Basin","ZONE 4","Phosphorus_Total_as_P","95Pct",4,0.77,"",0.70079922752551,0.79
+"468","Basin","ZONE 4","Phosphorus_Total_as_P","Mean",5,0.4584,"0.135274658060555",0.193266542180342,0.723533457819658
+"469","Basin","ZONE 4","Phosphorus_Total_as_P","Variance",5,0.11445824,"0.020273951252888",0.0747220257200188,0.154194454279981
+"470","Basin","ZONE 4","Phosphorus_Total_as_P","Std. Deviation",5,0.338316774635843,"0.0299629707612199",0.279590431074026,0.397043118197661
+"471","Basin","ZONE 5","Phosphorus_Total_as_P","5Pct",0,0.00825,"",0.00825,0.00825
+"472","Basin","ZONE 5","Phosphorus_Total_as_P","10Pct",0,0.0095,"",0.0095,0.0095
+"473","Basin","ZONE 5","Phosphorus_Total_as_P","25Pct",1,0.0225,"",0.002,0.0527600419992352
+"474","Basin","ZONE 5","Phosphorus_Total_as_P","50Pct",2,0.0505,"",0.00889900457223648,0.0887837826255014
+"475","Basin","ZONE 5","Phosphorus_Total_as_P","75Pct",3,0.0655,"",0.0263422843933655,0.096
+"476","Basin","ZONE 5","Phosphorus_Total_as_P","90Pct",4,0.0865,"",0.0524969351433252,0.096
+"477","Basin","ZONE 5","Phosphorus_Total_as_P","95Pct",4,0.09125,"",0.0642987740573301,0.096
+"478","Basin","ZONE 5","Phosphorus_Total_as_P","Mean",5,0.0514,"0.012906170294947",0.0261043710435631,0.0766956289564369
+"479","Basin","ZONE 5","Phosphorus_Total_as_P","Variance",5,0.00084304,"0.00029286886005766",0.000269027582093686,0.00141705241790631
+"480","Basin","ZONE 5","Phosphorus_Total_as_P","Std. Deviation",5,0.0290351511103352,"0.00504335002330006",0.0191503667032379,0.0389199355174326
+"481","Basin","ZONE 6","Phosphorus_Total_as_P","5Pct",0,0.03975,"",0.03975,0.03975
+"482","Basin","ZONE 6","Phosphorus_Total_as_P","10Pct",0,0.0415,"",0.0415,0.0415
+"483","Basin","ZONE 6","Phosphorus_Total_as_P","25Pct",1,0.1225,"",0.002,0.138537220985462
+"484","Basin","ZONE 6","Phosphorus_Total_as_P","50Pct",2,0.135,"",0.0417184170394003,0.330943683553994
+"485","Basin","ZONE 6","Phosphorus_Total_as_P","75Pct",3,0.23,"",0.127422998262558,0.4
+"486","Basin","ZONE 6","Phosphorus_Total_as_P","90Pct",4,0.335,"",0.137878763992468,0.4
+"487","Basin","ZONE 6","Phosphorus_Total_as_P","95Pct",4,0.3675,"",0.144545167909618,0.4
+"488","Basin","ZONE 6","Phosphorus_Total_as_P","Mean",5,0.195,"0.0517269279722742",0.0936170841434451,0.296382915856555
+"489","Basin","ZONE 6","Phosphorus_Total_as_P","Variance",5,0.0152,"0.00663397396997694",0.002197649944469,0.028202350055531
+"490","Basin","ZONE 6","Phosphorus_Total_as_P","Std. Deviation",5,0.12328828005938,"0.0269043171288537",0.0705567874581823,0.176019772660577
