@@ -1,0 +1,592 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={2021 Stream selections},
+  pdfauthor={C Sedlacek},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{2021 Stream selections}
+\author{C Sedlacek}
+\date{02/10/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{contact}{%
+\subsection{Contact:}\label{contact}}
+
+\hypertarget{jay-silvanima}{%
+\subsubsection{Jay Silvanima}\label{jay-silvanima}}
+
+Department of Environmental Protection
+
+Watershed Monitoring and Data Management
+
+2600 Blair Stone Road
+
+Mail Station 3525
+
+Tallahassee, Florida 32399-2400
+
+\href{mailto:Jay.Silvanima@dep.state.fl.us}{\nolinkurl{Jay.Silvanima@dep.state.fl.us}}
+
+phone: 850-245-8507
+
+fax: 850-245-8554
+
+or
+
+\hypertarget{andy-woeber}{%
+\subsubsection{Andy Woeber}\label{andy-woeber}}
+
+GIS Analyst
+
+Environmental Consultant
+
+Florida Department of Environmental Protection (FDEP)
+
+Division of Environmental Assessment and Restoration (DEAR)
+
+Watershed Monitoring Section (WMS)
+
+2600 Blair Stone Road, Tallahassee, FL 32399
+
+850-245-8031
+
+\href{mailto:Nathan.Woeber@dep.state.fl.us}{\nolinkurl{Nathan.Woeber@dep.state.fl.us}}
+
+\hypertarget{description-of-sample-design-for-panel-design}{%
+\section{\texorpdfstring{\textbf{Description of Sample Design for Panel
+Design}}{Description of Sample Design for Panel Design}}\label{description-of-sample-design-for-panel-design}}
+
+Target population: All small streams in the state of Florida separated
+into the six zones or basins.
+
+\hypertarget{sample-frame}{%
+\subsection{\texorpdfstring{\textbf{Sample
+Frame:}}{Sample Frame:}}\label{sample-frame}}
+
+The frame was provided by Florida Department of Environmental
+Protection, named \emph{`Cycle15\_SmallStreams\_coverage.shp'}. The
+length of the streams was calculated based on the length delineated by
+the GIS coverage. Please see chart 1 attached.
+
+\hypertarget{cycle-15-basins}{%
+\subsection{\texorpdfstring{\textbf{Cycle 15
+basins:}}{Cycle 15 basins:}}\label{cycle-15-basins}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# File: Flstreams.R}
+\CommentTok{# Purpose: Select stream sites for Florida streams}
+\CommentTok{#                 throughout the 6 basins for 2015}
+\CommentTok{# Programmer: Chris Sedlacek}
+\CommentTok{# Date: 2 December 2020}
+
+\CommentTok{# Load the library}
+\KeywordTok{library}\NormalTok{ (spsurvey)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'spsurvey' was built under R version 3.6.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Version 4.1.0 of the spsurvey package was loaded successfully.
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Read the .dbf file}
+\NormalTok{att<-}\KeywordTok{read.dbf}\NormalTok{(}\StringTok{"C:/Users/sedlacek_c/Documents/2021 Site selections/2021 SS/small streams coverage/Cycle15_SmallStreams_coverage"}\NormalTok{)}
+\KeywordTok{names}\NormalTok{(att)<-}\KeywordTok{tolower}\NormalTok{(}\KeywordTok{names}\NormalTok{(att)) }\CommentTok{# This action just makes typing easier}
+
+\CommentTok{# Check the first 6 and last 6 lines of data in att}
+\KeywordTok{head}\NormalTok{(att)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   gnis_name      reachcode c3_zone length_km resource       streamcode
+## 1      <NA> 03110103000047  Zone 1 1.4958154   Stream 1-03110103000047
+## 2      <NA> 03110103000225  Zone 1 0.4355217   Stream 2-03110103000225
+## 3      <NA> 03110103000225  Zone 1 0.2039056   Stream 3-03110103000225
+## 4      <NA> 03110103000231  Zone 1 1.3551711   Stream 4-03110103000231
+## 5      <NA> 03110103000232  Zone 1 3.6586048   Stream 5-03110103000232
+## 6      <NA> 03110103000232  Zone 1 0.2069332   Stream 6-03110103000232
+##   comment202 shape_leng
+## 1       <NA>  1495.8154
+## 2       <NA>   435.5217
+## 3       <NA>   203.9056
+## 4       <NA>  1355.1711
+## 5       <NA>  3658.6048
+## 6       <NA>   206.9332
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{tail}\NormalTok{(att)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##         gnis_name      reachcode c3_zone length_km resource
+## 18107 Rocky Creek 03110201000113  Zone 2 0.6104710   Stream
+## 18108 Rocky Creek 03110201000113  Zone 2 0.9063089   Stream
+## 18109 Rocky Creek 03110201000113  Zone 2 1.1524552   Stream
+## 18110        <NA> 03100206000266  Zone 4 1.4430757   Stream
+## 18111        <NA> 03130012000701  Zone 1 0.7714403   Stream
+## 18112  Dry Branch 03140101001019  Zone 1 0.7248576   Stream
+##                  streamcode comment202 shape_leng
+## 18107 113845-03110201000113       <NA>   610.4710
+## 18108 113846-03110201000113       <NA>   906.3089
+## 18109 113847-03110201000113       <NA>  1152.4552
+## 18110 113851-03100206000266       <NA>  1443.0757
+## 18111 113854-03130012000701       <NA>   771.4403
+## 18112 113856-03140101001019       <NA>   724.8576
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{levels}\NormalTok{(att}\OperatorTok{$}\NormalTok{c3_zone)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Zone 1" "Zone 2" "Zone 3" "Zone 4" "Zone 5" "Zone 6"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#levels(att$stratum)}
+\CommentTok{#levels(att$basin_name)}
+\NormalTok{att}\OperatorTok{$}\NormalTok{basin_name<-}\StringTok{ }\NormalTok{att}\OperatorTok{$}\NormalTok{c3_zone}
+\NormalTok{att}\OperatorTok{$}\NormalTok{length_mdm <-att}\OperatorTok{$}\NormalTok{length_km}
+\NormalTok{strmlngth<-}\KeywordTok{tapply}\NormalTok{(att}\OperatorTok{$}\NormalTok{length_mdm,}\KeywordTok{list}\NormalTok{(att}\OperatorTok{$}\NormalTok{c3_zone), sum)}
+\NormalTok{strmlngth[}\KeywordTok{is.na}\NormalTok{(strmlngth)] <-}\StringTok{ }\DecValTok{0}
+\KeywordTok{round}\NormalTok{(}\KeywordTok{addmargins}\NormalTok{(strmlngth),}\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  Zone 1  Zone 2  Zone 3  Zone 4  Zone 5  Zone 6     Sum 
+## 12329.2  2201.8  4484.5  4199.1   982.6   182.5 24379.8
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Read.dbf automatically calculates the length of each stream segment}
+\CommentTok{# names the result length_mdm}
+\CommentTok{# Change length calculated by spsurvey to km}
+\NormalTok{att}\OperatorTok{$}\NormalTok{length_mdm<-att}\OperatorTok{$}\NormalTok{length_km}\OperatorTok{/}\DecValTok{1000}
+
+\CommentTok{# Create a column to use as a stratum variable and check the components in }
+\CommentTok{# the att.stratum column and the att.basin_name column }
+\NormalTok{att}\OperatorTok{$}\NormalTok{stratum<-}\KeywordTok{factor}\NormalTok{(}\KeywordTok{as.character}\NormalTok{(att}\OperatorTok{$}\NormalTok{c3_zone))}
+\KeywordTok{levels}\NormalTok{(att}\OperatorTok{$}\NormalTok{stratum)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Zone 1" "Zone 2" "Zone 3" "Zone 4" "Zone 5" "Zone 6"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{levels}\NormalTok{(att}\OperatorTok{$}\NormalTok{c3_zone)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Zone 1" "Zone 2" "Zone 3" "Zone 4" "Zone 5" "Zone 6"
+\end{verbatim}
+
+\hypertarget{zone-stream-length-in-km}{%
+\subsubsection{Zone Stream length in
+km}\label{zone-stream-length-in-km}}
+
+Zone 1 12329.2
+
+Zone 2 2201.8
+
+Zone 3 4484.5
+
+Zone 4 4199.1
+
+Zone 5 982.6
+
+Zone 6 182.5
+
+Sum 24379.8
+
+\hypertarget{survey-design}{%
+\subsubsection{\texorpdfstring{\textbf{Survey
+Design:}}{Survey Design:}}\label{survey-design}}
+
+A Generalized Random Tessellation Stratified (GRTS) survey design for a
+linear stream resource was used. The GRTS design includes reverse
+hierarchical ordering of the selected sites.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{# Create the panel design for the six basins created for Cycle 3 streams }
+\CommentTok{# selection with a 9x oversample}
+\CommentTok{# Stratified           }
+
+\NormalTok{dsgn_SS <-}\StringTok{ }\KeywordTok{list}\NormalTok{(}\StringTok{'Zone 1'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{), }
+                \StringTok{'Zone 2'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{),}
+                \StringTok{'Zone 3'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{),}
+                \StringTok{'Zone 4'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{),}
+                \StringTok{'Zone 5'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{),        }
+                \StringTok{'Zone 6'}\NormalTok{=}\KeywordTok{list}\NormalTok{(}\DataTypeTok{panel=}\KeywordTok{c}\NormalTok{(}\DataTypeTok{Base=}\DecValTok{15}\NormalTok{),}
+                              \DataTypeTok{seltype=}\StringTok{'Equal'}\NormalTok{,}
+                              \DataTypeTok{over=}\DecValTok{135}\NormalTok{)}
+                
+\NormalTok{)}
+
+\CommentTok{# The following code is remmed out to prevent it trying to run in the version of R used for the markdown file.  Further comments about the need for this action (or the removal of actions) is noted below after Sample Frame summary.}
+
+\CommentTok{# Create the GRTS survey design}
+\CommentTok{#sample(1000000,1) # run once to get random seed and put result into set.seed}
+\CommentTok{# Reason is so that can reproduce exactly same sites if rerun it.}
+\CommentTok{#set.seed(356356)  # Don't change unless want a different set of sites}
+\CommentTok{#dsgntime <- proc.time()  # keep track of how long spsurvey takes}
+\CommentTok{#sites <- grts(design=dsgn_SS,}
+\CommentTok{#              DesignID="FLSS21001",}
+\CommentTok{#              type.frame="linear",}
+\CommentTok{#              src.frame="shapefile",}
+\CommentTok{#              in.shape="C:/Users/sedlacek_c/Documents/2021 Site selections/2021 SS/small streams coverage/Cycle15_SmallStreams_coverage",}
+\CommentTok{#              att.frame=att,}
+\CommentTok{#              stratum="stratum",}
+\CommentTok{#              prjfilename="C:/Users/sedlacek_c/Documents/2021 Site selections/2021 SS/small streams coverage/Cycle15_SmallStreams_coverage",}
+\CommentTok{#              out.shape="C:/Users/sedlacek_c/Documents/2021 site selections/2021 SS/2021_Stream_selections")}
+\CommentTok{#dsgntime <- (proc.time() - dsgntime)/60}
+\CommentTok{#dsgntime}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{stratification}{%
+\subsubsection{\texorpdfstring{\textbf{Stratification:}}{Stratification:}}\label{stratification}}
+
+Stratification was by zones/basins.
+
+\hypertarget{expected-sample-size}{%
+\subsubsection{\texorpdfstring{\textbf{Expected sample
+size:}}{Expected sample size:}}\label{expected-sample-size}}
+
+15 sites within each of the state's zones/basins.
+
+\hypertarget{oversample}{%
+\subsubsection{\texorpdfstring{\textbf{Oversample:}}{Oversample:}}\label{oversample}}
+
+135 sites for each Cycle 15 basin.
+
+\hypertarget{site-use}{%
+\subsubsection{\texorpdfstring{\textbf{Site
+Use:}}{Site Use:}}\label{site-use}}
+
+The base design has 10 sites for each basin in the stratum. Sites are
+listed in SiteID order and must be used in that order. All sites that
+occur prior to the last site used must have been evaluated for use and
+then either sampled or the reason documented as to why that site was not
+used. As an example, if 30 sites are to be sampled in the watershed,
+then the first 30 sites in SiteID order would be used.
+
+\hypertarget{sample-frame-summary}{%
+\subsubsection{\texorpdfstring{\textbf{Sample Frame
+Summary}}{Sample Frame Summary}}\label{sample-frame-summary}}
+
+Design Summary: Number of Sites Classified by panel and stratum
+
+\begin{verbatim}
+      stratum
+\end{verbatim}
+
+panel Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum Base 15 15 15 15 15
+15 90 OverSamp 135 135 135 135 135 135 810 Sum 150 150 150 150 150 150
+900
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{#Design Summary: Number of Sites Classified by panel and stratum}
+
+\CommentTok{#          stratum}
+\CommentTok{#panel      Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum}
+\CommentTok{#  Base         15     15     15     15     15     15  90}
+\CommentTok{#  OverSamp    135    135    135    135    135    135 810}
+\CommentTok{#  Sum         150    150    150    150    150    150 900}
+
+
+\CommentTok{# The printout above was created with the following code.  It was copied and pasted above as the version of R (3.6.2) used for the rmarkdown is newer than the version used for site selections (v 3.4.3) and as such not compatable.  As the versions update and change it is hoped that the code will function appropriately in the future.}
+\CommentTok{# print summary of sites selected}
+\CommentTok{#dsgnsum(sites)}
+\CommentTok{# Print the initial six lines of the survey design}
+\CommentTok{#sites <- sites@data    # this is attribute part of shapefile created}
+\CommentTok{#head(sites)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{site-selection-summary}{%
+\subsubsection{\texorpdfstring{\textbf{Site Selection
+Summary}}{Site Selection Summary}}\label{site-selection-summary}}
+
+No output from R.
+
+Description of Sample Design Output: The sites are provided as a
+shapefile that can be read directly by ArcMap. The dbf file associated
+with the shapefile may be read by Excel.
+
+The dbf file has the following variable definitions: Variable Name
+Description SiteID Unique site identification (character) arcid Internal
+identification number xcoord Albers x-coordinate ycoord Albers
+y-coordinate mdcaty Multi-density categories used for unequal
+probability selection weight Weight (in meters), inverse of inclusion
+probability, to be used in statistical analyses stratum Strata used in
+the survey design panel Identifies base sample by panel name and
+Oversample by OverSamp auxiliary variables Remaining columns are from
+the sample frame provided
+
+\hypertarget{projection-information}{%
+\subsubsection{\texorpdfstring{\textbf{Projection
+Information}}{Projection Information}}\label{projection-information}}
+
+Projected Coordinate System: FDEP Albers HARN
+
+Projection: Albers
+
+False\_Easting: 400000.00000000
+
+False\_Northing: 0.00000000
+
+Central\_Meridian: -84.00000000
+
+Standard\_Parallel\_1: 24.00000000
+
+Standard\_Parallel\_2: 31.50000000
+
+Latitude\_Of\_Origin: 24.00000000
+
+Linear Unit: Meter
+
+Geographic Coordinate System: GCS\_North\_American\_1983\_HARN
+
+Datum: D\_North\_American\_1983\_HARN
+
+Prime Meridian: Greenwich
+
+Angular Unit: Degree
+
+\hypertarget{evaluation-process}{%
+\subsubsection{\texorpdfstring{\textbf{Evaluation
+Process}}{Evaluation Process}}\label{evaluation-process}}
+
+The survey design weights that are given in the design file assume that
+the survey design is implemented as designed. That is, only the sites
+that are in the base sample (not in the over sample) are used, and all
+the base sites are used. This may not occur due to (1) sites not being a
+member of the target population, (2) landowners deny access to a site,
+(3) a site is physically inaccessible (safety reasons), or (4) site not
+sampled for other reasons. Typically, users prefer to replace sites that
+can not be sampled with other sites to achieve the sample size planned.
+The site replacement process is described above. When sites are
+replaced, the survey design weights are no longer correct and must be
+adjusted. The weight adjustment requires knowing what happened to each
+site in the base design and the over sample sites. EvalStatus is
+initially set to ``NotEval'' to indicate that the site has yet to be
+evaluated for sampling. When a site is evaluated for sampling, then the
+EvalStatus for the site must be changed. Recommended codes are:
+
+EvalStatus Code \textbar{} Name \textbar{} Meaning
+
+TS \textbar{} Target Sampled \textbar{} site is a member of the target
+population and was sampled
+
+LD \textbar{} Landowner Denial \textbar{} landowner denied access to the
+site
+
+PB \textbar{} Physical Barrier\textbar{} physical barrier prevented
+access to the site
+
+NT \textbar{} Non-Target \textbar{} site is not a member of the target
+population
+
+NN \textbar{} Not Needed \textbar{} site is a member of the over sample
+and was not evaluated for sampling
+
+Other codes Many times useful to have other codes. For example, rather
+than use NT, may use specific codes indicating why the site was
+non-target.
+
+\hypertarget{statistical-analysis}{%
+\subsubsection{Statistical Analysis}\label{statistical-analysis}}
+
+Any statistical analysis of data must incorporate information about the
+monitoring survey design. In particular, when estimates of
+characteristics for the entire target population are computed, the
+statistical analysis must account for any stratification or unequal
+probability selection in the design. Procedures for doing this are
+available from the Aquatic Resource Monitoring web page given in the
+bibliography. A statistical analysis library of functions is available
+from the web page to do common population estimates in the statistical
+software environment R.
+
+Questions and Inquiries about site selections
+
+Chris Sedlacek
+
+Environmental Consultant, Watershed Monitoring
+
+E-Mail:
+\href{mailto:christopher.sedlacek@dep.state.fl.us}{\nolinkurl{christopher.sedlacek@dep.state.fl.us}}
+
+Questions and Inquiries about GRTS sampling program/protocols
+
+Anthony (Tony) R. Olsen
+
+USEPA NHEERL
+
+Western Ecology Division
+
+200 S.W. 35th Street
+
+Corvallis, OR 97333
+
+Voice: (541) 754-4790
+
+Fax: (541) 754-4716
+
+email: \href{mailto:Olsen.Tony@epa.gov}{\nolinkurl{Olsen.Tony@epa.gov}}
+
+\hypertarget{bibliography}{%
+\subsubsection{\texorpdfstring{\textbf{Bibliography:}}{Bibliography:}}\label{bibliography}}
+
+Diaz-Ramos, S., D. L. Stevens, Jr, and A. R. Olsen. 1996. EMAP
+Statistical Methods Manual. EPA/620/R-96/002, U.S. Environmental
+Protection Agency, Office of Research and Development, NHEERL-Western
+Ecology Division, Corvallis, Oregon.
+
+Stevens, D.L., Jr.~1997. Variable density grid-based sampling designs
+for continuous spatial populations. Environmetrics, 8:167-95.
+
+Stevens, D.L., Jr.~and Olsen, A.R. 1999. Spatially restricted surveys
+over time for aquatic resources. Journal of Agricultural, Biological,
+and Environmental Statistics, 4:415-428
+
+Stevens, D. L., Jr., and A. R. Olsen. 2003. Variance estimation for
+spatially balanced samples of environmental resources. Environmetrics
+14:593-610.
+
+Stevens, D. L., Jr., and A. R. Olsen. 2004. Spatially-balanced sampling
+of natural resources in the presence of frame imperfections. Journal of
+American Statistical Association:99:262-278.
+
+Web Page: \url{http://www.epa.gov/nheerl/arm}
+
+\end{document}

@@ -1,0 +1,355 @@
+---
+title: "2021 Stream selections"
+author: "C Sedlacek"
+date: "02/10/2021"
+Updated: "09/08/2021 by Jay Silvanima"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(rmarkdown)
+```
+
+## Contact:
+### Jay Silvanima
+Department of Environmental Protection
+
+Watershed Monitoring and Data Management
+
+2600 Blair Stone Road
+
+Mail Station 3525
+
+Tallahassee, Florida 32399-2400
+
+Jay.Silvanima@dep.state.fl.us
+
+phone:   850-245-8507
+
+fax:        850-245-8554
+
+or
+
+### Andy Woeber
+
+GIS Analyst
+
+Environmental Consultant
+
+Florida Department of Environmental Protection (FDEP)
+
+Division of Environmental Assessment and Restoration (DEAR) 
+
+Watershed Monitoring Section (WMS)
+
+2600 Blair Stone Road, Tallahassee, FL 32399 
+
+850-245-8031
+
+Nathan.Woeber@dep.state.fl.us	
+
+
+
+# __Description of Sample Design for Panel Design__
+Target population:  All small streams designated as waters of the state of Florida separated into the six reporting zones / basins. 
+
+## __Geographic Information System Sample Frame:__ 
+The frame was provided by Florida Department of Environmental Protection, named  _‘Cycle15_SmallStreams_coverage.shp’_.  The length of the streams was calculated based on the length delineated by the GIS coverage.
+
+## __Cycle 15 basins:__
+
+```{r}
+# File: Stream selection script.R
+# Purpose: Select stream sites for Florida streams
+#                 throughout the 6 basins for 2021
+# Programmer: Chris Sedlacek, Jay Silvanima
+# Date: 25 February 2021
+# Updated Sept 2021 to add comments and graphic
+
+# This script needs to be run in R version 3.4 or lower as the grts function
+#   will crash otherwise.  Can toggle to 3.4 if you have it loaded via RStudio 
+#   Tools global options R versions - change.
+
+##Set directory. This is where the outputs will be saved. 
+#   Alter to desired location. Use getwd() to determine the directory for
+#     your r project.
+
+setwd("C:/R/2021 Stream selections")
+
+# Load the library
+library (spsurvey)
+
+# Load extent of small stream resource coverage in .dbf format from ArcGIS 
+# shapefile. Note shape file needs the information for the stream reachcodes and
+# and geographic strata (6 Zones)
+
+# Read the .dbf file
+att<-read.dbf("C:/R/2021 Stream selections/Cycle15_SmallStreams_Coverage")
+names(att)<-tolower(names(att)) # This action just makes typing easier
+
+# Check the first 6 and last 6 lines of data in att
+head(att)
+tail(att)
+levels(att$c3_zone)
+#levels(att$stratum)
+#levels(att$basin_name)
+att$basin_name<- att$c3_zone
+
+# Determine the extent of the streams in km for each zone and for the state.
+
+strmlngth<-tapply(att$length_km,list(att$c3_zone), sum)
+strmlngth[is.na(strmlngth)] <- 0
+round(addmargins(strmlngth),1)
+
+```
+### Zone   Stream length in km
+
+Zone 1 12329.2
+
+Zone 2 2201.8
+
+Zone 3 4484.5
+
+Zone 4 4199.1
+
+Zone 5 982.6
+
+Zone 6  182.5 
+
+Sum 24379.8
+              
+  
+  
+### __Survey Design:__ 
+A Generalized Random Tessellation Stratified (GRTS) survey design for a linear stream resource was used.  The GRTS design includes reverse hierarchical ordering of the selected sites.
+
+```{r}
+
+# Create a column to use as a stratum variable and check the components in 
+# the att.stratum column and the att.basin_name column 
+att$stratum<-factor(as.character(att$c3_zone))
+levels(att$stratum)
+levels(att$c3_zone)
+
+# Create the panel design for the six basins created for Cycle 3 streams 
+# selection with a 9x oversample
+# Stratified           
+
+dsgn_SS <- list('Zone 1'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135), 
+                'Zone 2'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135),
+                'Zone 3'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135),
+                'Zone 4'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135),
+                'Zone 5'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135),        
+                'Zone 6'=list(panel=c(Base=15),
+                              seltype='Equal',
+                              over=135)
+                
+)
+
+# Create the GRTS survey design
+
+# First generate a random number
+sample(1000000,1) 
+# run once to get random seed and put result into set.seed
+# Reason is so that can reproduce exactly same sites if rerun it.
+set.seed(356356) # Don't change unless want a different set of sites
+dsgntime <- proc.time()  # keep track of how long spsurvey takes
+sites <- grts(design=dsgn_SS,
+              DesignID="FLSS21001",
+              type.frame="linear",
+              src.frame="shapefile",
+              in.shape="C:/R/2021 Stream selections/Cycle15_SmallStreams_coverage",
+              att.frame=att,
+              stratum="stratum",
+              prjfilename="C:/R/2021 Stream selections/Cycle15_SmallStreams_coverage",
+              out.shape="C:/R/2021 Stream selections/ss site plot")
+dsgntime <- (proc.time() - dsgntime)/60
+dsgntime
+
+# print summary of sites selected
+dsgnsum(sites)
+# Print the initial six lines of the survey design
+sites <- sites@data    # this is attribute part of shapefile created
+head(sites)
+
+write.csv(sites, "2021_Stream_Selections.csv")
+
+# plot sites
+library(rgdal)
+
+sssiteplot <- readOGR("C:/R/2021 Stream selections/ss site plot.shp")
+
+plot(sssiteplot)
+```
+
+### __Stratification:__  
+Stratification was by zones/basins.
+
+### __Expected sample size:__  
+15 sites within each of the state’s zones/basins. 
+
+### __Oversample:__ 
+135 sites for each Cycle 15 basin.
+
+### __Site Use:__  
+The base design has 10 sites for each basin in the stratum.  Sites are listed in SiteID order and must be used in that order.  All sites that occur prior to the last site used must have been evaluated for use and then either sampled or the reason documented as to why that site was not used.  As an example, if 30 sites are to be sampled in the watershed, then the first 30 sites in SiteID order would be used.
+
+### __Sample Frame Summary__
+
+Design Summary: Number of Sites Classified by panel and stratum
+
+          stratum
+panel      Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum
+  Base         15     15     15     15     15     15  90
+  OverSamp    135    135    135    135    135    135 810
+  Sum         150    150    150    150    150    150 900
+
+```{r}
+#Design Summary: Number of Sites Classified by panel and stratum
+
+#          stratum
+#panel      Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum
+#  Base         15     15     15     15     15     15  90
+#  OverSamp    135    135    135    135    135    135 810
+#  Sum         150    150    150    150    150    150 900
+
+
+# The printout above was created with the following code. As the versions update and change it is hoped that the code will function appropriately in the future.
+# print summary of sites selected
+#dsgnsum(sites)
+# Print the initial six lines of the survey design
+#sites <- sites@data    # this is attribute part of shapefile created
+#head(sites)
+
+```
+
+
+### __Site Selection Summary__
+No output from R.
+
+Description of Sample Design Output:
+The sites are provided as a shapefile that can be read directly by ArcMap.  The dbf file associated with the shapefile may be read by Excel.
+
+The dbf file has the following variable definitions:
+Variable Name	Description
+SiteID	Unique site identification (character)
+arcid	Internal identification number
+xcoord	Albers x-coordinate
+ycoord	Albers y-coordinate
+mdcaty	Multi-density categories used for unequal probability selection
+weight	Weight (in meters), inverse of inclusion probability, to be used in statistical analyses
+stratum	Strata used in the survey design
+panel	Identifies base sample by panel name and Oversample by OverSamp
+auxiliary variables	Remaining columns are from the sample frame provided
+
+###  __Projection Information__
+
+Projected Coordinate System: FDEP Albers HARN
+
+Projection: Albers
+
+False_Easting: 400000.00000000
+
+False_Northing: 0.00000000
+
+Central_Meridian: -84.00000000
+
+Standard_Parallel_1: 24.00000000
+
+Standard_Parallel_2: 31.50000000
+
+Latitude_Of_Origin: 24.00000000
+
+Linear Unit: Meter
+
+
+Geographic Coordinate System: GCS_North_American_1983_HARN
+
+Datum: D_North_American_1983_HARN
+
+Prime Meridian: Greenwich
+
+Angular Unit: Degree
+
+
+
+### __Evaluation Process__
+The survey design weights that are given in the design file assume that the survey design is implemented as designed.  That is, only the sites that are in the base sample (not in the over sample) are used, and all the base sites are used.  This may not occur due to (1)  sites not being a member of the target population, (2) landowners deny access to a site, (3) a site is physically inaccessible (safety reasons), or (4) site not sampled for other reasons.  Typically, users prefer to replace sites that can not be sampled with other sites to achieve the sample size planned.  The site replacement process is described above.  When sites are replaced, the survey design weights are no longer correct and must be adjusted.  The weight adjustment requires knowing what happened to each site in the base design and the over sample sites.  EvalStatus is initially set to “NotEval” to indicate that the site has yet to be evaluated for sampling.  When a site is evaluated for sampling, then the EvalStatus for the site must be changed.  Recommended codes are:
+
+EvalStatus Code	 |    Name	      |       Meaning
+
+TS	             |    Target Sampled	 |  site is a member of the target population and was sampled
+
+LD	             |    Landowner Denial	| landowner denied access to the site
+
+PB	              |   Physical Barrier|	physical barrier prevented access to the site
+
+NT	              |   Non-Target	    |  site is not a member of the target population
+
+NN	               |  Not Needed	    |  site is a member of the over sample and was not evaluated for sampling
+
+
+
+Other codes		Many times useful to have other codes.  For example, rather than use NT, may use specific codes indicating why the site was non-target.
+
+### Statistical Analysis
+Any statistical analysis of data must incorporate information about the monitoring survey design.  In particular, when estimates of characteristics for the entire target population are computed, the statistical analysis must account for any stratification or unequal probability selection in the design.  Procedures for doing this are available from the Aquatic Resource Monitoring web page given in the bibliography.  A statistical analysis library of functions is available from the web page to do common population estimates in the statistical software environment R. 
+
+Questions and Inquiries about site selections
+
+Chris Sedlacek
+
+Environmental Consultant, Watershed Monitoring 
+
+E-Mail: christopher.sedlacek@dep.state.fl.us
+
+
+
+
+Questions and Inquiries about GRTS sampling program/protocols 
+
+Anthony (Tony) R. Olsen
+
+USEPA NHEERL
+
+Western Ecology Division
+
+200 S.W. 35th Street
+
+Corvallis, OR 97333
+
+Voice: (541) 754-4790
+
+Fax: (541) 754-4716
+
+email: Olsen.Tony@epa.gov
+
+### __Bibliography:__
+
+Diaz-Ramos, S., D. L. Stevens, Jr, and A. R. Olsen. 1996. EMAP Statistical Methods Manual. EPA/620/R-96/002, U.S. Environmental Protection Agency, Office of Research and Development, NHEERL-Western Ecology Division, Corvallis, Oregon.
+
+Stevens, D.L., Jr. 1997. Variable density grid-based sampling designs for continuous spatial populations. Environmetrics, 8:167-95.
+
+Stevens, D.L., Jr. and Olsen, A.R. 1999. Spatially restricted surveys over time for aquatic resources. Journal of Agricultural, Biological, and Environmental
+Statistics, 4:415-428
+
+Stevens, D. L., Jr., and A. R. Olsen. 2003. Variance estimation for spatially balanced samples of environmental resources. Environmetrics 14:593-610.
+
+Stevens, D. L., Jr., and A. R. Olsen. 2004. Spatially-balanced sampling of natural resources in the presence of frame imperfections. Journal of American Statistical Association:99:262-278.
+
+
+Web Page: http://www.epa.gov/nheerl/arm
+
