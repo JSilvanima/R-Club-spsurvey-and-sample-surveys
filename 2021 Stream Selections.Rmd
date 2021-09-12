@@ -14,22 +14,19 @@ library(rmarkdown)
 ```
 
 ## Contact:
-### Jay Silvanima
+### James (Jay) Silvanima
 Department of Environmental Protection
 
 Watershed Monitoring and Data Management
 
 2600 Blair Stone Road
 
-Mail Station 3525
-
 Tallahassee, Florida 32399-2400
 
-Jay.Silvanima@dep.state.fl.us
+James.Silvanima@dep.state.fl.us
 
 phone:   850-245-8507
 
-fax:        850-245-8554
 
 or
 
