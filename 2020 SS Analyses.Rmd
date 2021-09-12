@@ -1,8 +1,10 @@
 ---
 title: "2020 Small Stream Analyses"
 author: "Jay Silvanima"
-date: "9/8/2021"
-output: html_document
+date: "9/12/2021"
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -11,18 +13,16 @@ library(rmarkdown)
 ```
 
 ## Contact:
-### Jay Silvanima
+### James (Jay) Silvanima
 Department of Environmental Protection
 
 Watershed Monitoring and Data Management
 
 2600 Blair Stone Road
 
-Mail Station 3525
-
 Tallahassee, Florida 32399-2400
 
-Jay.Silvanima@dep.state.fl.us
+James.Silvanima@dep.state.fl.us
 
 phone:   850-245-8507
 
