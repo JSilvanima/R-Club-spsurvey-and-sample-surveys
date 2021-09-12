@@ -358,16 +358,14 @@ pre code {
 
 <div id="contact" class="section level2">
 <h2>Contact:</h2>
-<div id="jay-silvanima" class="section level3">
-<h3>Jay Silvanima</h3>
+<div id="james-jay-silvanima" class="section level3">
+<h3>James (Jay) Silvanima</h3>
 <p>Department of Environmental Protection</p>
 <p>Watershed Monitoring and Data Management</p>
 <p>2600 Blair Stone Road</p>
-<p>Mail Station 3525</p>
 <p>Tallahassee, Florida 32399-2400</p>
-<p><a href="mailto:Jay.Silvanima@dep.state.fl.us" class="email">Jay.Silvanima@dep.state.fl.us</a></p>
+<p><a href="mailto:James.Silvanima@dep.state.fl.us" class="email">James.Silvanima@dep.state.fl.us</a></p>
 <p>phone: 850-245-8507</p>
-<p>fax: 850-245-8554</p>
 <p>or</p>
 </div>
 <div id="andy-woeber" class="section level3">
@@ -514,7 +512,7 @@ dsgn_SS &lt;- list(&#39;Zone 1&#39;=list(panel=c(Base=15),
 
 # First generate a random number
 sample(1000000,1) </code></pre>
-<pre><code>## [1] 990074</code></pre>
+<pre><code>## [1] 125457</code></pre>
 <pre class="r"><code># run once to get random seed and put result into set.seed
 # Reason is so that can reproduce exactly same sites if rerun it.
 set.seed(356356) # Don&#39;t change unless want a different set of sites
@@ -571,8 +569,8 @@ sites &lt;- grts(design=dsgn_SS,
 ## Final number of levels: 9</code></pre>
 <pre class="r"><code>dsgntime &lt;- (proc.time() - dsgntime)/60
 dsgntime</code></pre>
-<pre><code>##     user   system  elapsed 
-## 1.875833 0.008500 1.891667</code></pre>
+<pre><code>##    user  system elapsed 
+##  1.8595  0.0065  1.8765</code></pre>
 <pre class="r"><code># print summary of sites selected
 dsgnsum(sites)</code></pre>
 <pre><code>## 
