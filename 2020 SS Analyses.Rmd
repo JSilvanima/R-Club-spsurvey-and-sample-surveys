@@ -131,11 +131,14 @@ addmargins(table(dsgn_sf$EXCLUSION_CATEGORY, dsgn_sf$TNT, useNA = 'ifany'))
 
 ```
 
+We evaluated 126 stream locations and determined that 12 were non-target, and of the 114 which were target 38 were able to be sampled.
+
+
 ## ___Adjust weights for Design As Implemented___
 
-Per Tony Olsen, “Since the survey design implementation required the use of replacement sites, the initial design weights must be adjusted to account for the actual number of sites evaluated. The weight adjustment requires knowing the lake area in the sample frame. First, create the framesize using stream miles from that design document. The initial design weights are in”NEST1_WT" and the weight adjustment categories are the six reporting units (or basins)."
+Per Tony Olsen, “The initial design weights must be adjusted to account for the actual number of sites evaluated. The weight adjustment requires knowing the stream lengths in the sample frame. First, create the framesize using stream kilometers from that 2020 stream design document. The initial design weights are in the column ”NEST1_WT" and the weight adjustment categories are the six reporting units."
 
-Note need frame size here found in design doc for latge lake site selections. From design document framesize in kilometers = 24,380.196 for entire data frame.
+Note need frame size here found in design doc for stream site selections. From design document framesize in kilometers = 24,380.196 for entire data frame.
 
 ```{r}
 

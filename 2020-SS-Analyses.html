@@ -543,11 +543,12 @@ addmargins(table(dsgn_sf$EXCLUSION_CATEGORY, dsgn_sf$TNT, useNA = &#39;ifany&#39
 ##   UNABLE TO ACCESS                              19   0  19
 ##   WRONG RESOURCE/NOT PART OF TARGET POPULATION   0  12  12
 ##   Sum                                          114  12 126</code></pre>
+<p>We evaluated 126 stream locations and determined that 12 were non-target, and of the 114 which were target 38 were able to be sampled.</p>
 </div>
 <div id="adjust-weights-for-design-as-implemented" class="section level2">
 <h2><strong><em>Adjust weights for Design As Implemented</em></strong></h2>
-<p>Per Tony Olsen, “Since the survey design implementation required the use of replacement sites, the initial design weights must be adjusted to account for the actual number of sites evaluated. The weight adjustment requires knowing the lake area in the sample frame. First, create the framesize using stream miles from that design document. The initial design weights are in”NEST1_WT&quot; and the weight adjustment categories are the six reporting units (or basins).&quot;</p>
-<p>Note need frame size here found in design doc for latge lake site selections. From design document framesize in kilometers = 24,380.196 for entire data frame.</p>
+<p>Per Tony Olsen, “The initial design weights must be adjusted to account for the actual number of sites evaluated. The weight adjustment requires knowing the stream lengths in the sample frame. First, create the framesize using stream kilometers from that 2020 stream design document. The initial design weights are in the column”NEST1_WT&quot; and the weight adjustment categories are the six reporting units.&quot;</p>
+<p>Note need frame size here found in design doc for stream site selections. From design document framesize in kilometers = 24,380.196 for entire data frame.</p>
 <pre class="r"><code># Note need frame size here found in design doc for stream site selections
 #  Z:\Chris site selection process\2020 site selections\2020 SS\Florida 2020 stream Design.doc
 #  From design document framesize in kilometers = 24,380.196 for entire data frame.
