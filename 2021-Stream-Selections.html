@@ -512,9 +512,9 @@ dsgn_SS &lt;- list(&#39;Zone 1&#39;=list(panel=c(Base=15),
 </div>
 <div id="create-the-grts-survey-design." class="section level1">
 <h1>Create the GRTS survey design.</h1>
-<p>First generate a random number and then include in set.seed command. Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function. type.frame identifies where point, linear, or polygon. scr.frame = source type of target population geographic coverag. in.shape = shapefile name of coverage. att.frame = name of dataframe to be created from shapefile. stratum = column in dataframe containing strata for design. prjfilename = ArcGIS project file name. out.shape = loation and name of shapefile to be generated which contains the site selections.</p>
+<p>First generate a random number and then include in set.seed command. Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function. type.frame = finite, linear, or area. scr.frame = source type of target population geographic coverage. in.shape = shapefile name of coverage. att.frame = name of dataframe to be created from shapefile. stratum = column in dataframe containing strata for design. prjfilename = ArcGIS project file name. out.shape = loation and name of shapefile to be generated which contains the site selections.</p>
 <pre class="r"><code>sample(1000000,1) </code></pre>
-<pre><code>## [1] 967996</code></pre>
+<pre><code>## [1] 332230</code></pre>
 <pre class="r"><code># run once to get random seed and put result into set.seed
 # Reason is so that can reproduce exactly same sites if rerun it.
 set.seed(356356) # Don&#39;t change unless want a different set of sites
@@ -571,8 +571,8 @@ sites &lt;- grts(design=dsgn_SS,
 ## Final number of levels: 9</code></pre>
 <pre class="r"><code>dsgntime &lt;- (proc.time() - dsgntime)/60
 dsgntime</code></pre>
-<pre><code>##     user   system  elapsed 
-## 1.915000 0.009000 1.949667</code></pre>
+<pre><code>##       user     system    elapsed 
+## 1.87933333 0.01016667 1.90516667</code></pre>
 <pre class="r"><code># print summary of sites selected
 dsgnsum(sites)</code></pre>
 <pre><code>## 

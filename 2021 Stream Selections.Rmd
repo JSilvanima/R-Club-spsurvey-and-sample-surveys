@@ -161,7 +161,7 @@ dsgn_SS <- list('Zone 1'=list(panel=c(Base=15),
 
 # Create the GRTS survey design.
 
-First generate a random number and then include in set.seed command.  Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function.  type.frame identifies where point, linear, or polygon.  scr.frame = source type of target population geographic coverag.  in.shape = shapefile name of coverage.  att.frame = name of dataframe to be created from shapefile.  stratum = column in dataframe containing strata for design.  prjfilename = ArcGIS project file name.  out.shape = loation and name of shapefile to be generated which contains the site selections.
+First generate a random number and then include in set.seed command.  Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function.  type.frame = finite, linear, or area.  scr.frame = source type of target population geographic coverage.  in.shape = shapefile name of coverage.  att.frame = name of dataframe to be created from shapefile.  stratum = column in dataframe containing strata for design.  prjfilename = ArcGIS project file name.  out.shape = loation and name of shapefile to be generated which contains the site selections.
 
 ```{r}
 sample(1000000,1) 
