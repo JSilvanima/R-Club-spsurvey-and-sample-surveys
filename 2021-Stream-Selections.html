@@ -412,8 +412,8 @@ library (spsurvey)</code></pre>
 <pre><code>## 
 ## Version 3.3 of the spsurvey package was loaded successfully.</code></pre>
 <pre class="r"><code># Load extent of small stream resource coverage in .dbf format from ArcGIS 
-# shapefile. Note shape file needs the information for the stream reachcodes and
-# and geographic strata (6 Zones)
+# shapefile. Note shape file needs to contain the information for the stream reachcodes and
+# and geographic strata (6 Zones).
 
 # Read the .dbf file
 att&lt;-read.dbf(&quot;C:/R/2021 Stream selections/Cycle15_SmallStreams_Coverage&quot;)
@@ -465,25 +465,25 @@ round(addmargins(strmlngth),1)</code></pre>
 ## 12329.2  2201.8  4484.5  4199.1   982.6   182.5 24379.8</code></pre>
 <div id="zone-stream-length-in-km" class="section level3">
 <h3>Zone Stream length in km</h3>
-<p>Zone 1 12329.2</p>
-<p>Zone 2 2201.8</p>
-<p>Zone 3 4484.5</p>
-<p>Zone 4 4199.1</p>
-<p>Zone 5 982.6</p>
-<p>Zone 6 182.5</p>
-<p>Sum 24379.8</p>
+<p>Zone 1 = 12,329.2</p>
+<p>Zone 2 = 2,201.8</p>
+<p>Zone 3 = 4,484.5</p>
+<p>Zone 4 = 4,199.1</p>
+<p>Zone 5 = 9,82.6</p>
+<p>Zone 6 = 182.5</p>
+<p>Sum = 24,379.8</p>
 </div>
 <div id="survey-design" class="section level3">
 <h3><strong>Survey Design:</strong></h3>
 <p>A Generalized Random Tessellation Stratified (GRTS) survey design for a linear stream resource was used. The GRTS design includes reverse hierarchical ordering of the selected sites.</p>
-<pre class="r"><code># Create a column to use as a stratum variable and check the components in 
-# the att.stratum column and the att.basin_name column 
-att$stratum&lt;-factor(as.character(att$c3_zone))
+<p>First crate a column to use as a stratum variable and check the components in it. Then set up the panel design.</p>
+<pre class="r"><code>att$stratum&lt;-factor(as.character(att$c3_zone))
+
 levels(att$stratum)</code></pre>
 <pre><code>## [1] &quot;Zone 1&quot; &quot;Zone 2&quot; &quot;Zone 3&quot; &quot;Zone 4&quot; &quot;Zone 5&quot; &quot;Zone 6&quot;</code></pre>
 <pre class="r"><code>levels(att$c3_zone)</code></pre>
 <pre><code>## [1] &quot;Zone 1&quot; &quot;Zone 2&quot; &quot;Zone 3&quot; &quot;Zone 4&quot; &quot;Zone 5&quot; &quot;Zone 6&quot;</code></pre>
-<pre class="r"><code># Create the panel design for the six basins created for Cycle 3 streams 
+<pre class="r"><code># Create the panel design for the six basins created for 2021 streams 
 # selection with a 9x oversample
 # Stratified           
 
@@ -506,13 +506,15 @@ dsgn_SS &lt;- list(&#39;Zone 1&#39;=list(panel=c(Base=15),
                               seltype=&#39;Equal&#39;,
                               over=135)
                 
-)
-
-# Create the GRTS survey design
-
-# First generate a random number
-sample(1000000,1) </code></pre>
-<pre><code>## [1] 125457</code></pre>
+)</code></pre>
+</div>
+</div>
+</div>
+<div id="create-the-grts-survey-design." class="section level1">
+<h1>Create the GRTS survey design.</h1>
+<p>First generate a random number and then include in set.seed command. Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function. type.frame identifies where point, linear, or polygon. scr.frame = source type of target population geographic coverag. in.shape = shapefile name of coverage. att.frame = name of dataframe to be created from shapefile. stratum = column in dataframe containing strata for design. prjfilename = ArcGIS project file name. out.shape = loation and name of shapefile to be generated which contains the site selections.</p>
+<pre class="r"><code>sample(1000000,1) </code></pre>
+<pre><code>## [1] 967996</code></pre>
 <pre class="r"><code># run once to get random seed and put result into set.seed
 # Reason is so that can reproduce exactly same sites if rerun it.
 set.seed(356356) # Don&#39;t change unless want a different set of sites
@@ -569,8 +571,8 @@ sites &lt;- grts(design=dsgn_SS,
 ## Final number of levels: 9</code></pre>
 <pre class="r"><code>dsgntime &lt;- (proc.time() - dsgntime)/60
 dsgntime</code></pre>
-<pre><code>##    user  system elapsed 
-##  1.8595  0.0065  1.8765</code></pre>
+<pre><code>##     user   system  elapsed 
+## 1.915000 0.009000 1.949667</code></pre>
 <pre class="r"><code># print summary of sites selected
 dsgnsum(sites)</code></pre>
 <pre><code>## 
@@ -606,48 +608,39 @@ head(sites)</code></pre>
 ## 4 2402-03140103002355              1143.318     Zone 1
 ## 5 5423-03140203002649              2187.951     Zone 1
 ## 6 5047-03130012000322              4851.050     Zone 1</code></pre>
-<pre class="r"><code>write.csv(sites, &quot;2021_Stream_Selections.csv&quot;)
+<pre class="r"><code>write.csv(sites, &quot;2021_Stream_Selections.csv&quot;)</code></pre>
+</div>
+<div id="plot-sites" class="section level1">
+<h1>plot sites</h1>
+<p>library(rgdal)</p>
+<p>sssiteplot &lt;- readOGR(“C:/R/2021 Stream selections/ss site plot.shp”)</p>
+<p>plot(sssiteplot)</p>
+<pre><code>
+### __Stratification:__  
+Stratification was by zones/basins.
 
-# plot sites
-library(rgdal)</code></pre>
-<pre><code>## rgdal: version: 1.2-16, (SVN revision 701)
-##  Geospatial Data Abstraction Library extensions to R successfully loaded
-##  Loaded GDAL runtime: GDAL 2.2.0, released 2017/04/28
-##  Path to GDAL shared files: C:/Users/silvanima_j/Documents/R/win-library/3.4/rgdal/gdal
-##  GDAL binary built with GEOS: TRUE 
-##  Loaded PROJ.4 runtime: Rel. 4.9.3, 15 August 2016, [PJ_VERSION: 493]
-##  Path to PROJ.4 shared files: C:/Users/silvanima_j/Documents/R/win-library/3.4/rgdal/proj
-##  Linking to sp version: 1.2-7</code></pre>
-<pre class="r"><code>sssiteplot &lt;- readOGR(&quot;C:/R/2021 Stream selections/ss site plot.shp&quot;)</code></pre>
-<pre><code>## OGR data source with driver: ESRI Shapefile 
-## Source: &quot;C:/R/2021 Stream selections/ss site plot.shp&quot;, layer: &quot;ss site plot&quot;
-## with 900 features
-## It has 18 fields</code></pre>
-<pre class="r"><code>plot(sssiteplot)</code></pre>
-<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABUAAAAPACAMAAADDuCPrAAAABlBMVEUAAAD///+l2Z/dAAAACXBIWXMAAB2HAAAdhwGP5fFlAAAgAElEQVR4nO3di5biOLZoUfj/n+7RlQHItp7bb5hz3FuVAcYW0mGVDWT04wlAyOPsAQDclYACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECShAkIACBAkoQJCAAgQJKECQgAIECeixHiYcvofX87EaAdVXuBMv2GMJKHwRL9hjvQuZT2VfQGUWrsFL8VgrAvq5rz+gxS3Lu/j/PQoNXbxSjrVRQHsLJ6CwJ6+Unc1aVA9oNYwCClfjlbKzbQI6rVojoMmdy+3+bhFQ2IBXys4EFL6XV8rO3sFaym2cz2omoJXGlQP6t6flHbNHv+6th1Rm+XleAzv7V5lcPx+TrSp3dwR0trP87cuA5iMuoNDJa2BntUv45IcdAvrvMfPNBBS2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" width="672" /></p>
-</div>
-<div id="stratification" class="section level3">
-<h3><strong>Stratification:</strong></h3>
-<p>Stratification was by zones/basins.</p>
-</div>
-<div id="expected-sample-size" class="section level3">
-<h3><strong>Expected sample size:</strong></h3>
-<p>15 sites within each of the state’s zones/basins.</p>
-</div>
-<div id="oversample" class="section level3">
-<h3><strong>Oversample:</strong></h3>
-<p>135 sites for each Cycle 15 basin.</p>
-</div>
-<div id="site-use" class="section level3">
-<h3><strong>Site Use:</strong></h3>
-<p>The base design has 10 sites for each basin in the stratum. Sites are listed in SiteID order and must be used in that order. All sites that occur prior to the last site used must have been evaluated for use and then either sampled or the reason documented as to why that site was not used. As an example, if 30 sites are to be sampled in the watershed, then the first 30 sites in SiteID order would be used.</p>
-</div>
-<div id="sample-frame-summary" class="section level3">
-<h3><strong>Sample Frame Summary</strong></h3>
-<p>Design Summary: Number of Sites Classified by panel and stratum</p>
-<pre><code>      stratum</code></pre>
-<p>panel Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum Base 15 15 15 15 15 15 90 OverSamp 135 135 135 135 135 135 810 Sum 150 150 150 150 150 150 900</p>
-<pre class="r"><code>#Design Summary: Number of Sites Classified by panel and stratum
+### __Expected sample size:__  
+15 sites within each of the state’s zones/basins. 
+
+### __Oversample:__ 
+135 sites for each Cycle 15 basin.
+
+### __Site Use:__  
+The base design has 10 sites for each basin in the stratum.  Sites are listed in SiteID order and must be used in that order.  All sites that occur prior to the last site used must have been evaluated for use and then either sampled or the reason documented as to why that site was not used.  As an example, if 30 sites are to be sampled in the watershed, then the first 30 sites in SiteID order would be used.
+
+### __Sample Frame Summary__
+
+Design Summary: Number of Sites Classified by panel and stratum
+
+          stratum
+panel      Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum
+  Base         15     15     15     15     15     15  90
+  OverSamp    135    135    135    135    135    135 810
+  Sum         150    150    150    150    150    150 900
+
+
+```r
+#Design Summary: Number of Sites Classified by panel and stratum
 
 #          stratum
 #panel      Zone 1 Zone 2 Zone 3 Zone 4 Zone 5 Zone 6 Sum
@@ -662,7 +655,6 @@ library(rgdal)</code></pre>
 # Print the initial six lines of the survey design
 #sites &lt;- sites@data    # this is attribute part of shapefile created
 #head(sites)</code></pre>
-</div>
 <div id="site-selection-summary" class="section level3">
 <h3><strong>Site Selection Summary</strong></h3>
 <p>No output from R.</p>
@@ -721,7 +713,6 @@ library(rgdal)</code></pre>
 <p>Stevens, D. L., Jr., and A. R. Olsen. 2003. Variance estimation for spatially balanced samples of environmental resources. Environmetrics 14:593-610.</p>
 <p>Stevens, D. L., Jr., and A. R. Olsen. 2004. Spatially-balanced sampling of natural resources in the presence of frame imperfections. Journal of American Statistical Association:99:262-278.</p>
 <p>Web Page: <a href="http://www.epa.gov/nheerl/arm" class="uri">http://www.epa.gov/nheerl/arm</a></p>
-</div>
 </div>
 </div>
 

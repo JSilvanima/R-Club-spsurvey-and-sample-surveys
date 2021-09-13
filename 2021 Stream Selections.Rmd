@@ -80,8 +80,8 @@ setwd("C:/R/2021 Stream selections")
 library (spsurvey)
 
 # Load extent of small stream resource coverage in .dbf format from ArcGIS 
-# shapefile. Note shape file needs the information for the stream reachcodes and
-# and geographic strata (6 Zones)
+# shapefile. Note shape file needs to contain the information for the stream reachcodes and
+# and geographic strata (6 Zones).
 
 # Read the .dbf file
 att<-read.dbf("C:/R/2021 Stream selections/Cycle15_SmallStreams_Coverage")
@@ -104,34 +104,35 @@ round(addmargins(strmlngth),1)
 ```
 ### Zone   Stream length in km
 
-Zone 1 12329.2
+Zone 1 = 12,329.2
 
-Zone 2 2201.8
+Zone 2 = 2,201.8
 
-Zone 3 4484.5
+Zone 3 = 4,484.5
 
-Zone 4 4199.1
+Zone 4 = 4,199.1
 
-Zone 5 982.6
+Zone 5 = 9,82.6
 
-Zone 6  182.5 
+Zone 6  = 182.5 
 
-Sum 24379.8
+Sum = 24,379.8
               
   
   
 ### __Survey Design:__ 
 A Generalized Random Tessellation Stratified (GRTS) survey design for a linear stream resource was used.  The GRTS design includes reverse hierarchical ordering of the selected sites.
 
+First crate a column to use as a stratum variable and check the components in it.  Then set up the panel design.
+
 ```{r}
 
-# Create a column to use as a stratum variable and check the components in 
-# the att.stratum column and the att.basin_name column 
 att$stratum<-factor(as.character(att$c3_zone))
+
 levels(att$stratum)
 levels(att$c3_zone)
 
-# Create the panel design for the six basins created for Cycle 3 streams 
+# Create the panel design for the six basins created for 2021 streams 
 # selection with a 9x oversample
 # Stratified           
 
@@ -156,9 +157,13 @@ dsgn_SS <- list('Zone 1'=list(panel=c(Base=15),
                 
 )
 
-# Create the GRTS survey design
+```
 
-# First generate a random number
+# Create the GRTS survey design.
+
+First generate a random number and then include in set.seed command.  Then set up spsuvey arguments and run grts function to produce the shape file with the selected site locations. Note there are lots of arguments for the grts function.  type.frame identifies where point, linear, or polygon.  scr.frame = source type of target population geographic coverag.  in.shape = shapefile name of coverage.  att.frame = name of dataframe to be created from shapefile.  stratum = column in dataframe containing strata for design.  prjfilename = ArcGIS project file name.  out.shape = loation and name of shapefile to be generated which contains the site selections.
+
+```{r}
 sample(1000000,1) 
 # run once to get random seed and put result into set.seed
 # Reason is so that can reproduce exactly same sites if rerun it.
@@ -183,6 +188,7 @@ sites <- sites@data    # this is attribute part of shapefile created
 head(sites)
 
 write.csv(sites, "2021_Stream_Selections.csv")
+```
 
 # plot sites
 library(rgdal)
